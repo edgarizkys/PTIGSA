@@ -66,34 +66,34 @@
           </div>
         </div>
 
-        <div class="md:col-span-8 bento-card group bento-reveal overflow-hidden border-cyan-mint/20 bg-bg-primary">
-          <div class="flex flex-col lg:flex-row items-center gap-10 h-full p-2">
-            <div class="flex-1 p-6 relative z-10">
-              <div class="inline-flex items-center gap-3 px-4 py-1.5 rounded-full bg-cyan-mint/10 border border-cyan-mint/30 mb-8">
+        <div class="md:col-span-8 bento-card group bento-reveal overflow-hidden border-cyan-mint/20 bg-bg-primary min-h-[500px] md:min-h-0">
+          <div class="flex flex-col md:flex-row items-center gap-6 md:gap-10 h-full p-4 md:p-2">
+            <div class="flex-1 p-2 md:p-6 relative z-10">
+              <div class="inline-flex items-center gap-3 px-4 py-1.5 rounded-full bg-cyan-mint/10 border border-cyan-mint/30 mb-6 md:mb-8">
                 <Terminal class="text-cyan-mint" :size="16" />
                 <span class="text-[9px] font-black uppercase tracking-widest text-cyan-mint">Operation Intelligence</span>
               </div>
-              <h3 class="text-3xl md:text-4xl font-black mb-6 font-outfit uppercase text-text-primary">Integrated Monitoring Center</h3>
+              <h3 class="text-3xl md:text-4xl font-black mb-4 md:mb-6 font-outfit uppercase text-text-primary leading-tight">Integrated Monitoring Center</h3>
               <p class="text-text-secondary text-base md:text-lg leading-relaxed font-semibold dark:font-medium">
-                Pusat kendali operasional digital untuk pengawasan real-time distribusi energi dan aktivitas pertambangan di seluruh wilayah kerja.
+                Pusat kendali operasional digital untuk pengawasan real-time distribusi energi dan aktivitas pertambangan.
               </p>
-              <div class="flex gap-6 mt-10">
+              <div class="flex gap-6 mt-6 md:mt-10">
                  <div class="flex flex-col">
-                    <span class="text-2xl font-black text-cyan-mint font-outfit">24/7</span>
-                    <span class="text-[10px] font-bold text-slate-500 uppercase tracking-widest">Active Guard</span>
+                    <span class="text-xl md:text-2xl font-black text-cyan-mint font-outfit">24/7</span>
+                    <span class="text-[9px] md:text-[10px] font-bold text-slate-500 uppercase tracking-widest">Active Guard</span>
                  </div>
                  <div class="flex flex-col">
-                    <span class="text-2xl font-black text-amber-gold font-outfit">Real-Time</span>
-                    <span class="text-[10px] font-bold text-slate-500 uppercase tracking-widest">Data Sync</span>
+                    <span class="text-xl md:text-2xl font-black text-amber-gold font-outfit">Real-Time</span>
+                    <span class="text-[9px] md:text-[10px] font-bold text-slate-500 uppercase tracking-widest">Data Sync</span>
                  </div>
               </div>
             </div>
-            <div class="w-full lg:w-[400px] h-full min-h-[300px] relative rounded-[2.5rem] overflow-hidden border-2 border-glass-border shadow-2xl">
+            <div class="w-full md:w-[350px] lg:w-[400px] h-64 md:h-full relative rounded-[2rem] md:rounded-[2.5rem] overflow-hidden border-2 border-glass-border shadow-2xl">
                <img src="/industrial_control_center.png" alt="Control Center" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" />
                <div class="absolute inset-0 bg-gradient-to-t from-bg-primary/80 to-transparent"></div>
-               <div class="absolute bottom-6 left-6 flex items-center gap-3">
+               <div class="absolute bottom-4 left-4 flex items-center gap-3">
                   <div class="w-2 h-2 bg-cyan-mint rounded-full animate-ping"></div>
-                  <span class="text-[10px] font-black uppercase tracking-widest text-white">System Online</span>
+                  <span class="text-[9px] font-black uppercase tracking-widest text-white">System Online</span>
                </div>
             </div>
           </div>

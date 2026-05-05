@@ -15,22 +15,22 @@
             
             <div class="space-y-10">
               <div class="flex items-center gap-8 group">
-                <div class="w-20 h-20 rounded-3xl bg-bg-primary flex items-center justify-center border border-glass-border group-hover:border-amber-gold transition-all duration-500">
-                  <Mail class="text-text-primary" :size="32" />
+                <div class="w-16 h-16 md:w-20 md:h-20 rounded-2xl md:rounded-3xl bg-bg-primary flex items-center justify-center border border-glass-border group-hover:border-amber-gold transition-all duration-500 shrink-0">
+                  <Mail class="text-text-primary" :size="24" />
                 </div>
-                <div>
+                <div class="min-w-0">
                   <p class="text-[10px] font-black uppercase tracking-widest text-slate-500 mb-2">Email Korporat</p>
-                  <p class="text-2xl font-black text-text-primary font-outfit">{{ globalConfig.links.email }}</p>
+                  <p class="text-lg md:text-2xl font-black text-text-primary font-outfit break-all">{{ globalConfig.links.email }}</p>
                 </div>
               </div>
 
               <div class="flex items-center gap-8 group">
-                <div class="w-20 h-20 rounded-3xl bg-bg-primary flex items-center justify-center border border-glass-border group-hover:border-electric-blue transition-all duration-500">
-                  <MapPin class="text-text-primary" :size="32" />
+                <div class="w-16 h-16 md:w-20 md:h-20 rounded-2xl md:rounded-3xl bg-bg-primary flex items-center justify-center border border-glass-border group-hover:border-electric-blue transition-all duration-500 shrink-0">
+                  <MapPin class="text-text-primary" :size="24" />
                 </div>
-                <div>
+                <div class="min-w-0">
                   <p class="text-[10px] font-black uppercase tracking-widest text-slate-500 mb-2">Kantor Pusat</p>
-                  <p class="text-2xl font-black text-text-primary font-outfit">Cilegon,Indonesia</p>
+                  <p class="text-lg md:text-2xl font-black text-text-primary font-outfit">Cilegon, Indonesia</p>
                 </div>
               </div>
             </div>

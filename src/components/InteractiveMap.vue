@@ -16,8 +16,8 @@
       <div class="relative w-full aspect-[4/3] md:aspect-[21/9] glass rounded-[2rem] md:rounded-[4rem] overflow-hidden border-2 border-glass-border shadow-2xl bg-bg-primary group">
         
         <!-- Generated Tech Map as Background -->
-        <div class="absolute inset-0 z-0 scale-110">
-          <img src="/indonesia_tech_map_1777988083519.png" alt="Indonesia Tech Map" class="w-full h-full object-cover opacity-90 dark:opacity-100 dark:invert-0 invert transition-all duration-700" />
+        <div class="absolute inset-0 z-0 scale-100 md:scale-110">
+          <img src="/indonesia_tech_map_1777988083519.png" alt="Indonesia Tech Map" class="w-full h-full object-contain md:object-cover opacity-90 dark:opacity-100 dark:invert-0 invert transition-all duration-700" />
         </div>
 
         <!-- Connection Lines (SVG) -->
