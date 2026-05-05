@@ -1,5 +1,5 @@
 <template>
-  <section class="relative min-h-screen flex items-center pt-20 overflow-hidden">
+  <section class="relative min-h-[90vh] flex items-center pt-24 pb-16 overflow-hidden">
     <!-- Cinematic Background -->
     <div class="absolute inset-0 z-0 overflow-hidden">
       <img 
@@ -27,7 +27,7 @@
             <span class="w-1.5 h-1.5 bg-electric-blue rounded-full animate-pulse [animation-delay:200ms]"></span>
             <span class="w-1.5 h-1.5 bg-cyan-mint rounded-full animate-pulse [animation-delay:400ms]"></span>
           </div>
-          <span class="text-[10px] font-black uppercase tracking-[0.4em] text-text-primary">Corporate Excellence V2.1</span>
+          <span class="text-[9px] font-black uppercase tracking-[0.4em] text-text-primary">Corporate Excellence V2.2</span>
         </div>
         
         <h1 class="text-4xl md:text-6xl lg:text-[6.8rem] font-black mb-10 leading-[0.9] md:leading-[0.85] hero-reveal font-outfit uppercase tracking-tighter text-text-primary">

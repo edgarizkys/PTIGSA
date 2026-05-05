@@ -1,9 +1,9 @@
 <template>
-  <section id="business" class="py-32 relative overflow-hidden bg-bg-primary">
+  <section id="business" class="py-20 md:py-28 relative overflow-hidden bg-bg-primary">
     <div class="container mx-auto px-6">
       <div class="mb-20">
-        <h2 class="text-3xl md:text-6xl font-black mb-6 bento-reveal font-outfit uppercase tracking-tighter text-text-primary">Pilar Bisnis Utama.</h2>
-        <p class="text-text-secondary max-w-xl bento-reveal text-base md:text-lg font-medium">Ekosistem terpadu yang menggabungkan kekuatan fisik dan kecerdasan digital untuk masa depan industri.</p>
+        <h2 class="text-3xl md:text-5xl font-black mb-4 bento-reveal font-outfit uppercase tracking-tighter text-text-primary">Pilar Bisnis Utama.</h2>
+        <p class="text-text-secondary max-w-xl bento-reveal text-sm md:text-base font-medium">Ekosistem terpadu yang menggabungkan kekuatan fisik dan kecerdasan digital.</p>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
@@ -11,7 +11,7 @@
         <div class="md:col-span-8 bento-card group bento-reveal min-h-[450px] cursor-pointer border-amber-gold/20 hover:border-amber-gold/60 transition-colors">
           <div class="relative z-10 h-full flex flex-col justify-between">
             <div>
-              <div class="w-20 h-20 rounded-3xl bg-amber-gold/10 flex items-center justify-center mb-10 group-hover:scale-110 transition-transform duration-500">
+              <div class="w-16 h-16 md:w-20 md:h-20 rounded-2xl md:rounded-3xl bg-amber-gold/10 flex items-center justify-center mb-6 md:mb-10 group-hover:scale-110 transition-transform duration-500">
                 <Flame class="text-amber-gold" :size="40" />
               </div>
               <h3 class="text-3xl md:text-5xl font-black mb-6 font-outfit uppercase text-text-primary">{{ globalConfig.pillars.energy.title }}</h3>
@@ -107,9 +107,9 @@
                 <Globe class="text-electric-blue" :size="24" />
                 <span class="text-[10px] font-black uppercase tracking-[0.3em] text-electric-blue">Ekspansi Global Terpadu</span>
               </div>
-              <h3 class="text-4xl md:text-7xl font-black mb-8 font-outfit uppercase text-slate-950 dark:text-white leading-[0.9] tracking-tighter">Konektivitas Global Tanpa Batas.</h3>
-              <p class="text-slate-600 dark:text-slate-400 text-lg md:text-xl font-semibold leading-relaxed max-w-xl">
-                Menyatukan kekuatan industri energi, logistik maritim, dan integrasi sistem digital dalam satu ekosistem yang tangguh dan transparan.
+              <h3 class="text-3xl md:text-6xl font-black mb-6 font-outfit uppercase text-slate-950 dark:text-white leading-[0.95] tracking-tighter">Konektivitas Global Tanpa Batas.</h3>
+              <p class="text-slate-600 dark:text-slate-400 text-base md:text-lg font-semibold leading-relaxed max-w-lg">
+                Menyatukan kekuatan industri energi, logistik maritim, dan integrasi sistem digital dalam satu ekosistem yang tangguh.
               </p>
             </div>
             

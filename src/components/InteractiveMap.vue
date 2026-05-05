@@ -1,5 +1,5 @@
 <template>
-  <section id="map" class="py-32 relative overflow-hidden bg-bg-secondary">
+  <section id="map" class="py-20 md:py-28 relative overflow-hidden bg-bg-secondary">
     <div class="container mx-auto px-6">
       <div class="text-center mb-20">
         <div class="inline-flex items-center gap-3 px-5 py-2 rounded-full bg-electric-blue/10 border border-electric-blue/20 mb-6">

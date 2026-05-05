@@ -1,5 +1,5 @@
 <template>
-  <footer id="contact" class="py-32 relative overflow-hidden bg-bg-secondary">
+  <footer id="contact" class="py-20 md:py-28 relative overflow-hidden bg-bg-secondary">
     <div class="container mx-auto px-6">
       <div class="glass rounded-[4rem] p-12 md:p-24 relative overflow-hidden border-t-2 border-glass-border">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">

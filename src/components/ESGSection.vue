@@ -1,5 +1,5 @@
 <template>
-  <section id="esg" class="py-32 relative overflow-hidden bg-bg-primary">
+  <section id="esg" class="py-20 md:py-28 relative overflow-hidden bg-bg-primary">
     <div class="container mx-auto px-6">
       <div class="glass rounded-[2rem] md:rounded-[4rem] p-8 md:p-24 border-l-8 border-cyan-mint flex flex-col md:flex-row items-center gap-10 md:gap-16">
         <div class="flex-1">
@@ -7,7 +7,7 @@
             <ShieldCheck class="text-cyan-mint" :size="20" />
             <span class="text-[10px] font-black uppercase tracking-[0.3em] text-cyan-mint">Operasional Berkelanjutan</span>
           </div>
-          <h2 class="text-3xl md:text-7xl font-black mb-8 leading-[1.1] md:leading-[1] font-outfit esg-reveal uppercase">Transformasi <br /> <span class="text-gradient-cyan">Industri Hijau.</span></h2>
+          <h2 class="text-3xl md:text-5xl font-black mb-6 leading-[1.1] md:leading-[1] font-outfit esg-reveal uppercase">Transformasi <br /> <span class="text-gradient-cyan">Industri Hijau.</span></h2>
           <p class="text-text-secondary text-lg md:text-xl mb-12 leading-relaxed esg-reveal font-medium">
             Kami mengintegrasikan teknologi pertambangan modern dengan efisiensi logistik maritim untuk meminimalkan dampak lingkungan.
           </p>
