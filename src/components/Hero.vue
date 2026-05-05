@@ -4,7 +4,7 @@
     <div class="absolute inset-0 z-0 overflow-hidden">
       <img 
         src="/hero_industrial_cinematic.png" 
-        alt="Industrial Nexus" 
+        alt="Industrial Infrastructure" 
         class="hero-bg-img w-full h-full object-cover scale-110 opacity-60 dark:opacity-40 transition-opacity duration-1000"
       />
       <!-- Gradient Overlays for Readability -->
@@ -27,7 +27,7 @@
             <span class="w-1.5 h-1.5 bg-electric-blue rounded-full animate-pulse [animation-delay:200ms]"></span>
             <span class="w-1.5 h-1.5 bg-cyan-mint rounded-full animate-pulse [animation-delay:400ms]"></span>
           </div>
-          <span class="text-[10px] font-black uppercase tracking-[0.4em] text-text-primary">Corporate Nexus V2.1</span>
+          <span class="text-[10px] font-black uppercase tracking-[0.4em] text-text-primary">Corporate Excellence V2.1</span>
         </div>
         
         <h1 class="text-6xl md:text-[6.8rem] font-black mb-10 leading-[0.85] hero-reveal font-outfit uppercase tracking-tighter text-text-primary">
@@ -41,7 +41,7 @@
 
         <div class="flex flex-wrap gap-8 hero-reveal">
           <button ref="btn1" @mousemove="handleMagnetic" @mouseleave="resetMagnetic" class="btn-magnetic px-12 py-6 text-sm uppercase tracking-[0.2em] shadow-2xl shadow-electric-blue/20">
-            Eksplorasi Nexus
+            Pelajari Selengkapnya
           </button>
           <button ref="btn2" @mousemove="handleMagnetic" @mouseleave="resetMagnetic" class="px-12 py-6 rounded-full border-2 border-glass-border glass hover:bg-text-primary hover:text-bg-primary transition-all duration-500 font-black flex items-center gap-4 group text-sm uppercase tracking-[0.2em] shadow-xl">
             Profil Korporat
@@ -72,7 +72,7 @@
                <div class="h-full bg-amber-gold w-[94%] animate-pulse"></div>
              </div>
              <div class="flex justify-between items-end mb-1">
-               <span class="text-[10px] font-black uppercase text-text-secondary">Nexus Sync</span>
+               <span class="text-[10px] font-black uppercase text-text-secondary">System Sync</span>
                <span class="text-xs font-black text-cyan-mint">Live</span>
              </div>
              <div class="h-2 w-56 bg-text-primary/5 rounded-full overflow-hidden">

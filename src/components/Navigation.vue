@@ -7,7 +7,7 @@
             <Zap class="text-black" :size="24" />
           </div>
           <div class="flex flex-col leading-tight">
-            <span class="text-xl font-black tracking-tighter text-text-primary uppercase font-outfit">{{ nexusConfig.branding.shortName }}</span>
+            <span class="text-xl font-black tracking-tighter text-text-primary uppercase font-outfit">{{ globalConfig.branding.shortName }}</span>
             <span class="text-[8px] font-bold text-amber-gold tracking-widest uppercase">Global Anugerah</span>
           </div>
         </div>
@@ -45,7 +45,7 @@
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue';
 import { Zap, Menu, Moon, Sun, Lock } from 'lucide-vue-next';
-import { nexusConfig } from '../config';
+import { globalConfig } from '../config';
 
 const scrolled = ref(false);
 const isDark = ref(true);

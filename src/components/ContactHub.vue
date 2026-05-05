@@ -8,9 +8,9 @@
               <span class="w-2 h-2 bg-amber-gold rounded-full animate-pulse"></span>
               <span class="text-[10px] font-black uppercase tracking-[0.3em] text-amber-gold">Hubungi Kami</span>
             </div>
-            <h2 class="text-5xl md:text-[5rem] font-black mb-10 leading-[1] font-outfit uppercase">ISE GLOBAL <br /> <span class="text-gradient-amber">NEXUS.</span></h2>
+            <h2 class="text-5xl md:text-[5rem] font-black mb-10 leading-[1] font-outfit uppercase">ISE GLOBAL <br /> <span class="text-gradient-amber">ANUGERAH.</span></h2>
             <p class="text-text-secondary text-xl mb-12 max-w-md leading-relaxed">
-              Bermitra dengan kami untuk mendefinisikan ulang sinergi antara energi, logistik, dan kecerdasan digital.
+              Bermitra dengan kami untuk mendefinisikan ulang sinergi antara energi, logistik, dan kecerdasan digital dalam skala profesional.
             </p>
             
             <div class="space-y-10">
@@ -20,7 +20,7 @@
                 </div>
                 <div>
                   <p class="text-[10px] font-black uppercase tracking-widest text-slate-500 mb-2">Email Korporat</p>
-                  <p class="text-2xl font-black text-text-primary font-outfit">{{ nexusConfig.links.email }}</p>
+                  <p class="text-2xl font-black text-text-primary font-outfit">{{ globalConfig.links.email }}</p>
                 </div>
               </div>
 
@@ -30,32 +30,52 @@
                 </div>
                 <div>
                   <p class="text-[10px] font-black uppercase tracking-widest text-slate-500 mb-2">Kantor Pusat</p>
-                  <p class="text-2xl font-black text-text-primary font-outfit">Jakarta, Indonesia</p>
+                  <p class="text-2xl font-black text-text-primary font-outfit">Cilegon,Indonesia</p>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="relative h-[500px] rounded-[3rem] overflow-hidden border border-glass-border shadow-2xl bg-bg-primary">
-            <!-- Map Visualization -->
-            <div class="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')]"></div>
-            <div class="absolute inset-0 flex items-center justify-center">
-               <Globe class="text-electric-blue/20 animate-pulse" :size="400" />
-               <div class="absolute w-6 h-6 bg-amber-gold rounded-full shadow-[0_0_20px_#FFBF00] z-20"></div>
+          <!-- Energy & Mining Visual Section -->
+          <div class="relative h-[550px] rounded-[4rem] overflow-hidden border-4 border-glass-border shadow-2xl bg-bg-primary group">
+            <!-- Background Image -->
+            <img src="/energy_mining_hub.png" alt="Energy & Mining Industrial Hub" class="absolute inset-0 w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-1000" />
+            
+            <!-- Dark Overlay -->
+            <div class="absolute inset-0 bg-gradient-to-t from-bg-primary via-transparent to-transparent"></div>
+            
+            <!-- Floating Icons -->
+            <div class="absolute top-12 left-12 flex gap-4">
+               <div class="w-16 h-16 glass rounded-2xl flex items-center justify-center border border-amber-gold/30">
+                 <Flame class="text-amber-gold" :size="28" />
+               </div>
+               <div class="w-16 h-16 glass rounded-2xl flex items-center justify-center border border-electric-blue/30">
+                 <HardHat class="text-electric-blue" :size="28" />
+               </div>
             </div>
-            <div class="absolute bottom-10 left-10 right-10 glass p-8 rounded-3xl">
-              <p class="text-lg font-black text-text-primary mb-2 font-outfit uppercase">Lokasi Strategis</p>
-              <p class="text-sm text-text-secondary">Kami beroperasi di titik-titik vital perdagangan global.</p>
+
+            <!-- Content Card -->
+            <div class="absolute bottom-10 left-10 right-10 glass p-10 rounded-[2.5rem] border border-glass-border translate-y-4 group-hover:translate-y-0 transition-transform duration-500 shadow-2xl">
+              <div class="flex items-center gap-4 mb-4">
+                 <div class="w-10 h-10 bg-amber-gold/20 rounded-xl flex items-center justify-center">
+                    <Factory class="text-amber-gold" :size="20" />
+                 </div>
+                 <p class="text-xl font-black text-text-primary font-outfit uppercase tracking-tighter">Sinergi Energi & Pertambangan</p>
+              </div>
+              <p class="text-sm text-text-secondary leading-relaxed font-medium">
+                Pusat operasional strategis yang mendukung rantai pasok energi dan manajemen infrastruktur pertambangan dengan keandalan operasional tingkat tinggi.
+              </p>
             </div>
           </div>
         </div>
 
+        <!-- Footer Bottom -->
         <div class="mt-32 pt-16 border-t border-glass-border flex flex-col md:flex-row justify-between items-center gap-10">
           <div class="flex items-center gap-4">
              <div class="w-10 h-10 bg-amber-gold rounded-xl flex items-center justify-center">
                <Zap class="text-black" :size="20" />
              </div>
-             <span class="text-2xl font-black text-text-primary uppercase font-outfit tracking-tighter">{{ nexusConfig.branding.name }}</span>
+             <span class="text-2xl font-black text-text-primary uppercase font-outfit tracking-tighter">{{ globalConfig.branding.name }}</span>
           </div>
           <div class="flex gap-10">
             <a v-for="social in socials" :key="social.name" href="#" class="text-text-secondary hover:text-text-primary transition-colors">
@@ -69,8 +89,8 @@
 </template>
 
 <script setup>
-import { Mail, MapPin, Linkedin, Twitter, Instagram, Youtube, Globe, Zap } from 'lucide-vue-next';
-import { nexusConfig } from '../config';
+import { Mail, MapPin, Linkedin, Twitter, Instagram, Youtube, Flame, HardHat, Zap, Factory } from 'lucide-vue-next';
+import { globalConfig } from '../config';
 
 const socials = [
   { name: 'LinkedIn', icon: Linkedin },

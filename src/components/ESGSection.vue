@@ -4,29 +4,49 @@
       <div class="glass rounded-[4rem] p-12 md:p-24 border-l-8 border-cyan-mint flex flex-col md:flex-row items-center gap-16">
         <div class="flex-1">
           <div class="inline-flex items-center gap-3 px-5 py-2 rounded-full bg-cyan-mint/10 border border-cyan-mint/20 mb-10 esg-reveal">
-            <Leaf class="text-cyan-mint" :size="20" />
-            <span class="text-[10px] font-black uppercase tracking-[0.3em] text-cyan-mint">ESG & Sustainability</span>
+            <ShieldCheck class="text-cyan-mint" :size="20" />
+            <span class="text-[10px] font-black uppercase tracking-[0.3em] text-cyan-mint">Operasional Berkelanjutan</span>
           </div>
-          <h2 class="text-5xl md:text-7xl font-black mb-8 leading-[1] font-outfit esg-reveal">Transisi Energi <br /> <span class="text-gradient-cyan">Berkelanjutan.</span></h2>
-          <p class="text-text-secondary text-xl mb-12 leading-relaxed esg-reveal">
-            Kami berkomitmen untuk mengurangi jejak karbon melalui teknologi efisiensi tinggi dan integrasi energi terbarukan dalam operasional industri.
+          <h2 class="text-5xl md:text-7xl font-black mb-8 leading-[1] font-outfit esg-reveal uppercase">Transformasi <br /> <span class="text-gradient-cyan">Industri Hijau.</span></h2>
+          <p class="text-text-secondary text-xl mb-12 leading-relaxed esg-reveal font-medium">
+            Kami mengintegrasikan teknologi pertambangan modern dengan efisiensi logistik maritim untuk meminimalkan dampak lingkungan dan memaksimalkan output energi.
           </p>
           <div class="grid grid-cols-2 gap-8 esg-reveal">
-            <div>
-              <p class="text-4xl font-black text-text-primary mb-2">35%</p>
-              <p class="text-[10px] font-bold uppercase tracking-widest text-slate-500">Carbon Reduction</p>
+            <div class="p-6 rounded-3xl bg-bg-secondary border border-glass-border">
+              <p class="text-4xl font-black text-text-primary mb-2">40%</p>
+              <p class="text-[10px] font-bold uppercase tracking-widest text-slate-500">Efisiensi Armada</p>
             </div>
-            <div>
+            <div class="p-6 rounded-3xl bg-bg-secondary border border-glass-border">
               <p class="text-4xl font-black text-text-primary mb-2">100%</p>
-              <p class="text-[10px] font-bold uppercase tracking-widest text-slate-500">Digital Governance</p>
+              <p class="text-[10px] font-bold uppercase tracking-widest text-slate-500">Kepatuhan ESG</p>
             </div>
           </div>
         </div>
-        <div class="w-full md:w-96 aspect-square rounded-[3rem] bg-cyan-mint/5 border border-cyan-mint/10 flex items-center justify-center relative overflow-hidden esg-reveal group">
-          <Globe class="text-cyan-mint opacity-20 absolute scale-150 group-hover:rotate-12 transition-transform duration-1000" :size="300" />
-          <div class="relative z-10 text-center">
-            <Zap class="text-cyan-mint mb-4 mx-auto" :size="64" />
-            <p class="font-black text-text-primary uppercase tracking-widest">Green Nexus</p>
+
+        <!-- Mining & Shipping Animation Container -->
+        <div class="w-full md:w-[500px] aspect-square rounded-[3rem] bg-bg-secondary border-4 border-glass-border flex items-center justify-center relative overflow-hidden esg-reveal group shadow-2xl">
+          <!-- Background Image -->
+          <img src="/mining_shipping_sustainability.png" alt="Mining & Shipping" class="absolute inset-0 w-full h-full object-cover opacity-80 group-hover:scale-110 transition-transform duration-[2000ms]" />
+          
+          <!-- Animated Overlays -->
+          <div class="absolute inset-0 bg-gradient-to-t from-bg-primary via-transparent to-transparent"></div>
+          
+          <!-- Floating UI Elements -->
+          <div class="absolute top-8 right-8 flex flex-col gap-3">
+             <div class="w-12 h-12 glass rounded-xl flex items-center justify-center border border-cyan-mint/30 animate-bounce">
+               <Ship class="text-cyan-mint" :size="24" />
+             </div>
+             <div class="w-12 h-12 glass rounded-xl flex items-center justify-center border border-amber-gold/30 [animation-delay:500ms] animate-bounce">
+               <HardHat class="text-amber-gold" :size="24" />
+             </div>
+          </div>
+
+          <!-- Bottom Label -->
+          <div class="absolute bottom-8 left-8 right-8 glass p-6 rounded-2xl border border-glass-border">
+            <p class="text-xs font-black text-text-primary uppercase tracking-widest mb-1">Logistik Terintegrasi</p>
+            <div class="w-full h-1 bg-white/10 rounded-full overflow-hidden">
+               <div class="w-2/3 h-full bg-cyan-mint animate-pulse"></div>
+            </div>
           </div>
         </div>
       </div>
@@ -36,7 +56,7 @@
 
 <script setup>
 import { onMounted } from 'vue';
-import { Leaf, Globe, Zap } from 'lucide-vue-next';
+import { ShieldCheck, Ship, HardHat } from 'lucide-vue-next';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 

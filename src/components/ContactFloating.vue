@@ -7,7 +7,7 @@
       </div>
       <div>
         <p class="text-[9px] font-black text-slate-500 uppercase tracking-widest mb-1">Email Saluran Resmi</p>
-        <p class="text-xs font-bold text-text-primary">{{ nexusConfig.links.email }}</p>
+        <p class="text-xs font-bold text-text-primary">{{ globalConfig.links.email }}</p>
       </div>
       <button @click="copyEmail" class="ml-4 p-2 hover:bg-text-primary/10 rounded-lg transition-colors">
         <Copy v-if="!copied" :size="16" class="text-text-primary" />
@@ -25,7 +25,7 @@
       </button>
 
       <!-- WhatsApp Button -->
-      <a :href="nexusConfig.links.whatsapp" target="_blank" 
+      <a :href="globalConfig.links.whatsapp" target="_blank" 
          class="w-20 h-20 bg-[#25D366] rounded-3xl flex items-center justify-center text-white shadow-[0_20px_40px_rgba(37,211,102,0.3)] pulse-wa hover:scale-110 transition-transform duration-500 group border-2 border-white/20 relative">
         <MessageCircle :size="36" />
         
@@ -44,13 +44,13 @@
 <script setup>
 import { ref } from 'vue';
 import { MessageCircle, Mail, Copy, Check, X } from 'lucide-vue-next';
-import { nexusConfig } from '../config';
+import { globalConfig } from '../config';
 
 const showEmailChip = ref(false);
 const copied = ref(false);
 
 const copyEmail = () => {
-  navigator.clipboard.writeText(nexusConfig.links.email);
+  navigator.clipboard.writeText(globalConfig.links.email);
   copied.value = true;
   setTimeout(() => {
     copied.value = false;

@@ -1,6 +1,6 @@
 import { reactive } from 'vue';
 
-export const nexusConfig = reactive({
+export const globalConfig = reactive({
   branding: {
     name: 'PT ISE Global Anugerah',
     shortName: 'ISE GLOBAL',
