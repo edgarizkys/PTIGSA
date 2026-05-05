@@ -1,0 +1,127 @@
+@import "tailwindcss";
+
+@theme {
+  --font-inter: "Inter", sans-serif;
+  --font-outfit: "Outfit", sans-serif;
+  
+  --color-amber-gold: #FFBF00;
+  --color-electric-blue: #007BFF;
+  --color-cyan-mint: #00FFD1;
+  
+  /* Semantic Colors for Theme */
+  --color-bg-primary: var(--bg-primary);
+  --color-bg-secondary: var(--bg-secondary);
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-glass-bg: var(--glass-bg);
+  --color-glass-border: var(--glass-border);
+}
+
+:root {
+  --bg-primary: #ffffff;
+  --bg-secondary: #f1f5f9;
+  --text-primary: #000000;
+  --text-secondary: #334155;
+  --glass-bg: rgba(255, 255, 255, 0.95);
+  --glass-border: rgba(0, 0, 0, 0.12);
+  color-scheme: light;
+}
+
+.dark {
+  --bg-primary: #0A0F1E;
+  --bg-secondary: #0D1426;
+  --text-primary: #ffffff;
+  --text-secondary: #94a3b8;
+  --glass-bg: rgba(255, 255, 255, 0.03);
+  --glass-border: rgba(255, 255, 255, 0.08);
+  color-scheme: dark;
+}
+
+@layer base {
+  body {
+    @apply bg-bg-primary text-text-secondary font-inter selection:bg-amber-gold/30;
+    margin: 0;
+    min-height: 100vh;
+    overflow-x: hidden;
+    transition: background-color 0.5s ease, color 0.5s ease;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply text-text-primary font-outfit font-bold tracking-tight;
+  }
+}
+
+/* Custom Component Classes */
+.glass {
+  background-color: var(--color-glass-bg);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid var(--color-glass-border);
+}
+
+@layer utilities {
+  .text-gradient-amber {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-amber-gold to-yellow-500;
+  }
+
+  .text-gradient-blue {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-electric-blue to-cyan-500;
+  }
+
+  .text-gradient-cyan {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-cyan-mint to-teal-400;
+  }
+
+  .bento-card {
+    @apply rounded-3xl p-8 transition-all duration-500 overflow-hidden relative border border-glass-border shadow-sm;
+    background-color: var(--color-glass-bg);
+  }
+
+  .bento-card:hover {
+    @apply shadow-xl;
+  }
+
+  .dark .bento-card {
+    @apply shadow-none;
+  }
+
+  .btn-magnetic {
+    @apply relative inline-flex items-center justify-center px-8 py-4 font-bold text-white transition-all duration-300 rounded-full overflow-hidden;
+    background: linear-gradient(45deg, var(--color-electric-blue), var(--color-cyan-mint));
+    box-shadow: 0 10px 20px -5px rgba(0, 123, 255, 0.3);
+  }
+
+  .btn-magnetic:hover {
+    box-shadow: 0 15px 30px -5px rgba(0, 123, 255, 0.5);
+  }
+}
+
+/* Custom Cursor */
+.custom-cursor {
+  width: 20px;
+  height: 20px;
+  background: white;
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  mix-blend-mode: difference;
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.custom-cursor-follower {
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  z-index: 9998;
+  transition: transform 0.1s ease, width 0.3s ease, height 0.3s ease;
+}
+
+/* GSAP Reveal Helper */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+}
