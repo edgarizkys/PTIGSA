@@ -8,7 +8,7 @@
               <span class="w-2 h-2 bg-amber-gold rounded-full animate-pulse"></span>
               <span class="text-[10px] font-black uppercase tracking-[0.3em] text-amber-gold">Hubungi Kami</span>
             </div>
-            <h2 class="text-5xl md:text-[5rem] font-black mb-10 leading-[1] font-outfit uppercase">ISE GLOBAL <br /> <span class="text-gradient-amber">ANUGERAH.</span></h2>
+            <h2 class="text-4xl md:text-[5rem] font-black mb-10 leading-[1] font-outfit uppercase">ISE GLOBAL <br /> <span class="text-gradient-amber">ANUGERAH.</span></h2>
             <p class="text-text-secondary text-xl mb-12 max-w-md leading-relaxed">
               Bermitra dengan kami untuk mendefinisikan ulang sinergi antara energi, logistik, dan kecerdasan digital dalam skala profesional.
             </p>
@@ -37,7 +37,7 @@
           </div>
 
           <!-- Energy & Mining Visual Section -->
-          <div class="relative h-[550px] rounded-[4rem] overflow-hidden border-4 border-glass-border shadow-2xl bg-bg-primary group">
+          <div class="relative h-[400px] md:h-[550px] rounded-[2rem] md:rounded-[4rem] overflow-hidden border-4 border-glass-border shadow-2xl bg-bg-primary group">
             <!-- Background Image -->
             <img src="/energy_mining_hub.png" alt="Energy & Mining Industrial Hub" class="absolute inset-0 w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-1000" />
             
@@ -55,15 +55,15 @@
             </div>
 
             <!-- Content Card -->
-            <div class="absolute bottom-10 left-10 right-10 glass p-10 rounded-[2.5rem] border border-glass-border translate-y-4 group-hover:translate-y-0 transition-transform duration-500 shadow-2xl">
+            <div class="absolute bottom-6 left-6 right-6 md:bottom-10 md:left-10 md:right-10 glass p-6 md:p-10 rounded-[2rem] md:rounded-[2.5rem] border border-glass-border translate-y-4 group-hover:translate-y-0 transition-transform duration-500 shadow-2xl">
               <div class="flex items-center gap-4 mb-4">
-                 <div class="w-10 h-10 bg-amber-gold/20 rounded-xl flex items-center justify-center">
-                    <Factory class="text-amber-gold" :size="20" />
+                 <div class="w-8 h-8 md:w-10 md:h-10 bg-amber-gold/20 rounded-xl flex items-center justify-center">
+                    <Factory class="text-amber-gold" :size="16" />
                  </div>
-                 <p class="text-xl font-black text-text-primary font-outfit uppercase tracking-tighter">Sinergi Energi & Pertambangan</p>
+                 <p class="text-base md:text-xl font-black text-text-primary font-outfit uppercase tracking-tighter">Sinergi Energi & Pertambangan</p>
               </div>
-              <p class="text-sm text-text-secondary leading-relaxed font-medium">
-                Pusat operasional strategis yang mendukung rantai pasok energi dan manajemen infrastruktur pertambangan dengan keandalan operasional tingkat tinggi.
+              <p class="text-[12px] md:text-sm text-text-secondary leading-relaxed font-medium">
+                Pusat operasional strategis yang mendukung rantai pasok energi dan manajemen infrastruktur pertambangan.
               </p>
             </div>
           </div>

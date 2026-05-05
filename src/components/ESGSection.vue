@@ -1,24 +1,24 @@
 <template>
   <section id="esg" class="py-32 relative overflow-hidden bg-bg-primary">
     <div class="container mx-auto px-6">
-      <div class="glass rounded-[4rem] p-12 md:p-24 border-l-8 border-cyan-mint flex flex-col md:flex-row items-center gap-16">
+      <div class="glass rounded-[2rem] md:rounded-[4rem] p-8 md:p-24 border-l-8 border-cyan-mint flex flex-col md:flex-row items-center gap-10 md:gap-16">
         <div class="flex-1">
           <div class="inline-flex items-center gap-3 px-5 py-2 rounded-full bg-cyan-mint/10 border border-cyan-mint/20 mb-10 esg-reveal">
             <ShieldCheck class="text-cyan-mint" :size="20" />
             <span class="text-[10px] font-black uppercase tracking-[0.3em] text-cyan-mint">Operasional Berkelanjutan</span>
           </div>
-          <h2 class="text-5xl md:text-7xl font-black mb-8 leading-[1] font-outfit esg-reveal uppercase">Transformasi <br /> <span class="text-gradient-cyan">Industri Hijau.</span></h2>
-          <p class="text-text-secondary text-xl mb-12 leading-relaxed esg-reveal font-medium">
-            Kami mengintegrasikan teknologi pertambangan modern dengan efisiensi logistik maritim untuk meminimalkan dampak lingkungan dan memaksimalkan output energi.
+          <h2 class="text-3xl md:text-7xl font-black mb-8 leading-[1.1] md:leading-[1] font-outfit esg-reveal uppercase">Transformasi <br /> <span class="text-gradient-cyan">Industri Hijau.</span></h2>
+          <p class="text-text-secondary text-lg md:text-xl mb-12 leading-relaxed esg-reveal font-medium">
+            Kami mengintegrasikan teknologi pertambangan modern dengan efisiensi logistik maritim untuk meminimalkan dampak lingkungan.
           </p>
-          <div class="grid grid-cols-2 gap-8 esg-reveal">
-            <div class="p-6 rounded-3xl bg-bg-secondary border border-glass-border">
-              <p class="text-4xl font-black text-text-primary mb-2">40%</p>
-              <p class="text-[10px] font-bold uppercase tracking-widest text-slate-500">Efisiensi Armada</p>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-8 esg-reveal">
+            <div class="p-4 md:p-6 rounded-2xl md:rounded-3xl bg-bg-secondary border border-glass-border">
+              <p class="text-3xl md:text-4xl font-black text-text-primary mb-2">40%</p>
+              <p class="text-[9px] md:text-[10px] font-bold uppercase tracking-widest text-slate-500">Efisiensi Armada</p>
             </div>
-            <div class="p-6 rounded-3xl bg-bg-secondary border border-glass-border">
-              <p class="text-4xl font-black text-text-primary mb-2">100%</p>
-              <p class="text-[10px] font-bold uppercase tracking-widest text-slate-500">Kepatuhan ESG</p>
+            <div class="p-4 md:p-6 rounded-2xl md:rounded-3xl bg-bg-secondary border border-glass-border">
+              <p class="text-3xl md:text-4xl font-black text-text-primary mb-2">100%</p>
+              <p class="text-[9px] md:text-[10px] font-bold uppercase tracking-widest text-slate-500">Kepatuhan ESG</p>
             </div>
           </div>
         </div>

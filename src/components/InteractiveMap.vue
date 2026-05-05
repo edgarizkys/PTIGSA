@@ -6,14 +6,14 @@
           <Globe class="text-electric-blue" :size="20" />
           <span class="text-[10px] font-black uppercase tracking-[0.3em] text-electric-blue">National Presence</span>
         </div>
-        <h2 class="text-4xl md:text-6xl font-black mb-6 font-outfit uppercase tracking-tighter text-text-primary">Jejak Operasional Indonesia.</h2>
+        <h2 class="text-3xl md:text-6xl font-black mb-6 font-outfit uppercase tracking-tighter text-text-primary">Jejak Operasional Indonesia.</h2>
         <p class="text-text-secondary max-w-2xl mx-auto text-lg leading-relaxed font-medium">
           Menghubungkan simpul-simpul industri strategis dari Sabang sampai Merauke melalui infrastruktur energi dan logistik yang terintegrasi.
         </p>
       </div>
 
       <!-- Indonesia Map Container -->
-      <div class="relative w-full aspect-[21/9] glass rounded-[4rem] overflow-hidden border-2 border-glass-border shadow-2xl bg-bg-primary group">
+      <div class="relative w-full aspect-[4/3] md:aspect-[21/9] glass rounded-[2rem] md:rounded-[4rem] overflow-hidden border-2 border-glass-border shadow-2xl bg-bg-primary group">
         
         <!-- Generated Tech Map as Background -->
         <div class="absolute inset-0 z-0 scale-110">
@@ -63,7 +63,7 @@
         </div>
 
         <!-- Floating Info -->
-        <div class="absolute bottom-10 left-10 glass p-6 rounded-3xl border-l-4 border-amber-gold shadow-2xl">
+        <div class="absolute bottom-4 left-4 md:bottom-10 md:left-10 glass p-4 md:p-6 rounded-2xl md:rounded-3xl border-l-4 border-amber-gold shadow-2xl">
           <div class="flex items-center gap-4">
              <div class="w-12 h-12 bg-amber-gold/20 rounded-2xl flex items-center justify-center">
                <Zap class="text-amber-gold" :size="24" />

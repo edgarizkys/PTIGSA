@@ -30,7 +30,7 @@
           <span class="text-[10px] font-black uppercase tracking-[0.4em] text-text-primary">Corporate Excellence V2.1</span>
         </div>
         
-        <h1 class="text-6xl md:text-[6.8rem] font-black mb-10 leading-[0.85] hero-reveal font-outfit uppercase tracking-tighter text-text-primary">
+        <h1 class="text-4xl md:text-6xl lg:text-[6.8rem] font-black mb-10 leading-[0.9] md:leading-[0.85] hero-reveal font-outfit uppercase tracking-tighter text-text-primary">
           Masa Depan <br />
           <span class="text-gradient-amber">Energi</span> & <span class="text-gradient-blue">Logistik.</span>
         </h1>

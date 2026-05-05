@@ -1,17 +1,18 @@
 <template>
   <nav class="fixed top-0 left-0 w-full z-[100] transition-all duration-500" :class="{ 'py-4': !scrolled, 'py-2': scrolled }">
     <div class="container mx-auto px-6">
-      <div class="glass rounded-full px-8 py-4 flex justify-between items-center transition-all duration-500 shadow-xl">
+      <div class="glass rounded-full px-6 md:px-8 py-3 md:py-4 flex justify-between items-center transition-all duration-500 shadow-xl">
         <div class="flex items-center gap-3 group cursor-pointer">
-          <div class="w-10 h-10 bg-amber-gold rounded-xl flex items-center justify-center group-hover:rotate-12 transition-transform duration-500">
-            <Zap class="text-black" :size="24" />
+          <div class="w-8 h-8 md:w-10 md:h-10 bg-amber-gold rounded-xl flex items-center justify-center group-hover:rotate-12 transition-transform duration-500">
+            <Zap class="text-black" :size="20" />
           </div>
           <div class="flex flex-col leading-tight">
-            <span class="text-xl font-black tracking-tighter text-text-primary uppercase font-outfit">{{ globalConfig.branding.shortName }}</span>
-            <span class="text-[8px] font-bold text-amber-gold tracking-widest uppercase">Global Anugerah</span>
+            <span class="text-lg md:text-xl font-black tracking-tighter text-text-primary uppercase font-outfit">{{ globalConfig.branding.shortName }}</span>
+            <span class="text-[7px] md:text-[8px] font-bold text-amber-gold tracking-widest uppercase">Global Anugerah</span>
           </div>
         </div>
 
+        <!-- Desktop Menu -->
         <div class="hidden md:flex items-center gap-8">
           <a v-for="link in links" :key="link.name" :href="link.href" 
              class="text-[10px] font-black uppercase tracking-widest text-text-secondary hover:text-amber-gold transition-colors duration-300">
@@ -19,11 +20,11 @@
           </a>
         </div>
 
-        <div class="flex items-center gap-4">
+        <div class="flex items-center gap-2 md:gap-4">
           <!-- Theme Toggle -->
-          <button @click="toggleTheme" class="w-10 h-10 rounded-full flex items-center justify-center bg-bg-secondary border border-glass-border hover:scale-110 transition-transform">
-            <Moon v-if="!isDark" :size="18" class="text-text-primary" />
-            <Sun v-else :size="18" class="text-amber-gold" />
+          <button @click="toggleTheme" class="w-8 h-8 md:w-10 md:h-10 rounded-full flex items-center justify-center bg-bg-secondary border border-glass-border hover:scale-110 transition-transform">
+            <Moon v-if="!isDark" :size="16" class="text-text-primary" />
+            <Sun v-else :size="16" class="text-amber-gold" />
           </button>
 
           <!-- Partner Portal -->
@@ -33,22 +34,40 @@
           </button>
 
           <!-- Mobile Toggle -->
-          <button class="md:hidden text-text-primary">
-            <Menu :size="28" />
+          <button @click="isMobileMenuOpen = !isMobileMenuOpen" class="md:hidden text-text-primary p-2">
+            <Menu v-if="!isMobileMenuOpen" :size="24" />
+            <X v-else :size="24" />
           </button>
         </div>
       </div>
     </div>
+
+    <!-- Mobile Menu Overlay -->
+    <transition name="menu">
+      <div v-if="isMobileMenuOpen" class="fixed inset-0 z-[-1] bg-bg-primary/95 backdrop-blur-xl flex flex-col items-center justify-center p-10 md:hidden">
+        <div class="flex flex-col items-center gap-8 text-center">
+          <a v-for="link in links" :key="link.name" :href="link.href" 
+             @click="isMobileMenuOpen = false"
+             class="text-4xl font-black uppercase font-outfit text-text-primary hover:text-amber-gold transition-colors tracking-tighter">
+            {{ link.name }}
+          </a>
+          <button class="mt-10 px-8 py-4 rounded-2xl bg-text-primary text-bg-primary font-black uppercase tracking-widest text-sm">
+            Partner Portal
+          </button>
+        </div>
+      </div>
+    </transition>
   </nav>
 </template>
 
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue';
-import { Zap, Menu, Moon, Sun, Lock } from 'lucide-vue-next';
+import { Zap, Menu, Moon, Sun, Lock, X } from 'lucide-vue-next';
 import { globalConfig } from '../config';
 
 const scrolled = ref(false);
 const isDark = ref(true);
+const isMobileMenuOpen = ref(false);
 
 const links = [
   { name: 'Energi', href: '#energy' },
@@ -83,3 +102,16 @@ onUnmounted(() => {
   window.removeEventListener('scroll', handleScroll);
 });
 </script>
+
+<style scoped>
+.menu-enter-active,
+.menu-leave-active {
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-enter-from,
+.menu-leave-to {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+</style>
