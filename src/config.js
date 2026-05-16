@@ -2,9 +2,9 @@ import { reactive } from 'vue';
 
 export const globalConfig = reactive({
   branding: {
-    name: 'PT ISE Global Anugerah',
-    shortName: 'ISE GLOBAL',
-    tagline: 'Sinergi Energi, Logistik, dan Inovasi untuk Keunggulan Global',
+    name: 'PT. BERKAH JASA ABADI',
+    shortName: 'BERKAH JASA',
+    tagline: 'Sinergi Keahlian, Logistik, dan Integritas untuk Masa Depan Abadi',
   },
   links: {
     whatsapp: 'https://wa.me/6281234567890',

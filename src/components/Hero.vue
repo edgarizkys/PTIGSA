@@ -55,11 +55,11 @@
     <div class="absolute bottom-20 right-20 hidden xl:block hero-reveal z-20">
        <div class="glass p-10 rounded-[4rem] border-b-8 border-amber-gold shadow-[0_50px_100px_rgba(0,0,0,0.1)] hover:-translate-y-4 transition-transform duration-700">
           <div class="flex items-center gap-6 mb-8">
-            <div class="w-16 h-16 bg-amber-gold rounded-[1.5rem] flex items-center justify-center shadow-lg shadow-amber-gold/20">
-              <Zap class="text-black" :size="32" />
+            <div class="w-16 h-16 bg-white rounded-[1.5rem] flex items-center justify-center shadow-lg shadow-black/5 overflow-hidden p-2 border border-slate-100">
+              <img src="../assets/logo.png" alt="Logo" class="w-full h-full object-contain" />
             </div>
             <div>
-              <p class="text-3xl font-black text-text-primary font-outfit">ISE-CORE</p>
+              <p class="text-3xl font-black text-text-primary font-outfit">BJA-CORE</p>
               <p class="text-[10px] font-bold text-slate-500 uppercase tracking-[0.3em]">Operational Live</p>
             </div>
           </div>

@@ -4,7 +4,7 @@
       <div class="text-center mb-20">
         <div class="inline-flex items-center gap-3 px-5 py-2 rounded-full bg-cyan-mint/10 border border-cyan-mint/20 mb-6 flow-reveal">
           <span class="w-2 h-2 bg-cyan-mint rounded-full animate-pulse"></span>
-          <span class="text-[10px] font-black uppercase tracking-[0.3em] text-cyan-mint">Mesin Sinergi ISE</span>
+          <span class="text-[10px] font-black uppercase tracking-[0.3em] text-cyan-mint">Mesin Sinergi BJA</span>
         </div>
         <h2 class="text-4xl md:text-6xl font-black mb-6 flow-reveal font-outfit uppercase text-text-primary">Ekosistem Terintegrasi.</h2>
         <p class="text-text-secondary max-w-2xl mx-auto text-lg flow-reveal font-medium">
@@ -54,7 +54,7 @@
         <div class="absolute top-10 right-[12%] w-44 h-44 glass rounded-3xl flex flex-col items-center justify-center border-2 border-electric-blue/30 bg-bg-primary shadow-xl">
           <Ship class="text-electric-blue mb-3" :size="40" />
           <p class="text-xs font-black uppercase text-text-primary tracking-widest">Logistik</p>
-          <p class="text-[8px] font-bold text-slate-500 mt-1 uppercase">Global Supply</p>
+          <p class="text-[8px] font-bold text-slate-500 mt-1 uppercase">Integrated Supply</p>
         </div>
         <div class="absolute bottom-10 left-[12%] w-44 h-44 glass rounded-3xl flex flex-col items-center justify-center border border-glass-border bg-bg-primary shadow-xl">
           <BarChart4 class="text-text-primary mb-3" :size="40" />

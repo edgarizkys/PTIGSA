@@ -70,7 +70,7 @@
              </div>
              <div>
                <p class="text-sm font-black text-text-primary uppercase font-outfit">Sistem Monitoring Aktif</p>
-               <p class="text-[9px] font-bold text-slate-500 uppercase tracking-widest">ISE-GLOBAL V2.1</p>
+               <p class="text-[9px] font-bold text-slate-500 uppercase tracking-widest">BJA-SYSTEM V1.0</p>
              </div>
           </div>
         </div>

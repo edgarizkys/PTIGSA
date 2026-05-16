@@ -2,13 +2,13 @@
   <nav class="fixed top-0 left-0 w-full z-[100] transition-all duration-500" :class="{ 'py-4': !scrolled, 'py-2': scrolled }">
     <div class="container mx-auto px-6">
       <div class="glass rounded-full px-6 md:px-8 py-3 md:py-4 flex justify-between items-center transition-all duration-500 shadow-xl">
-        <div class="flex items-center gap-3 group cursor-pointer">
-          <div class="w-8 h-8 md:w-10 md:h-10 bg-amber-gold rounded-xl flex items-center justify-center group-hover:rotate-12 transition-transform duration-500">
-            <Zap class="text-black" :size="20" />
+        <div class="flex items-center gap-3 group cursor-pointer" @click="window.scrollTo({top: 0, behavior: 'smooth'})">
+          <div class="w-10 h-10 md:w-12 md:h-12 bg-white rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-500 overflow-hidden p-1 shadow-lg border border-slate-100">
+            <img src="../assets/logo.png" alt="Logo" class="w-full h-full object-contain" />
           </div>
           <div class="flex flex-col leading-tight">
             <span class="text-lg md:text-xl font-black tracking-tighter text-text-primary uppercase font-outfit">{{ globalConfig.branding.shortName }}</span>
-            <span class="text-[7px] md:text-[8px] font-bold text-amber-gold tracking-widest uppercase">Global Anugerah</span>
+            <span class="text-[7px] md:text-[8px] font-bold text-amber-gold tracking-widest uppercase">Berkah Jasa Abadi</span>
           </div>
         </div>
 

@@ -19,7 +19,7 @@
 
         <div class="flex-1 grid grid-cols-2 md:grid-cols-3 gap-8 items-center opacity-50 grayscale hover:grayscale-0 transition-all duration-700">
           <div class="flex justify-center p-8 bg-white/5 border border-white/5 hover:border-industrial-orange/30 transition-colors">
-            <span class="text-white font-black tracking-tighter text-xl italic">GLOBAL_FINANCE</span>
+            <span class="text-white font-black tracking-tighter text-xl italic">BJA_FINANCE</span>
           </div>
           <div class="flex justify-center p-8 bg-white/5 border border-white/5 hover:border-industrial-orange/30 transition-colors">
             <span class="text-white font-black tracking-tighter text-xl italic">ENERGY_TRUST</span>
