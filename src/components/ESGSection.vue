@@ -9,7 +9,7 @@
           </div>
           <h2 class="text-3xl md:text-5xl font-black mb-6 leading-[1.1] md:leading-[1] font-outfit esg-reveal uppercase">Transformasi <br /> <span class="text-gradient-cyan">Industri Hijau.</span></h2>
           <p class="text-text-secondary text-lg md:text-xl mb-12 leading-relaxed esg-reveal font-medium">
-            Kami mengintegrasikan teknologi pertambangan modern dengan efisiensi logistik maritim untuk meminimalkan dampak lingkungan.
+            Kami mengintegrasikan teknologi modern dengan efisiensi advertising kreatif untuk meminimalkan dampak lingkungan dan memaksimalkan jangkauan.
           </p>
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-8 esg-reveal">
             <div class="p-4 md:p-6 rounded-2xl md:rounded-3xl bg-bg-secondary border border-glass-border">
@@ -34,7 +34,7 @@
           <!-- Floating UI Elements -->
           <div class="absolute top-8 right-8 flex flex-col gap-3">
              <div class="w-12 h-12 glass rounded-xl flex items-center justify-center border border-cyan-mint/30 animate-bounce">
-               <Ship class="text-cyan-mint" :size="24" />
+               <Megaphone class="text-cyan-mint" :size="24" />
              </div>
              <div class="w-12 h-12 glass rounded-xl flex items-center justify-center border border-amber-gold/30 [animation-delay:500ms] animate-bounce">
                <HardHat class="text-amber-gold" :size="24" />
@@ -43,7 +43,7 @@
 
           <!-- Bottom Label -->
           <div class="absolute bottom-8 left-8 right-8 glass p-6 rounded-2xl border border-glass-border">
-            <p class="text-xs font-black text-text-primary uppercase tracking-widest mb-1">Logistik Terintegrasi</p>
+            <p class="text-xs font-black text-text-primary uppercase tracking-widest mb-1">Advertising Terintegrasi</p>
             <div class="w-full h-1 bg-white/10 rounded-full overflow-hidden">
                <div class="w-2/3 h-full bg-cyan-mint animate-pulse"></div>
             </div>
@@ -56,7 +56,7 @@
 
 <script setup>
 import { onMounted } from 'vue';
-import { ShieldCheck, Ship, HardHat } from 'lucide-vue-next';
+import { ShieldCheck, Megaphone, HardHat } from 'lucide-vue-next';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 

@@ -33,7 +33,7 @@
         <div class="md:col-span-4 bento-card group bento-reveal cursor-pointer border-electric-blue/20 hover:border-electric-blue/60 bg-gradient-to-br from-electric-blue/5 to-transparent transition-colors overflow-hidden">
           <div class="relative z-10">
             <div class="w-16 h-16 rounded-2xl bg-electric-blue/10 flex items-center justify-center mb-8 group-hover:rotate-12 transition-transform">
-              <Ship class="text-electric-blue" :size="32" />
+              <Megaphone class="text-electric-blue" :size="32" />
             </div>
             <h3 class="text-3xl font-black mb-6 font-outfit uppercase text-text-primary">{{ globalConfig.pillars.logistics.title }}</h3>
             <p class="text-text-secondary mb-10 leading-relaxed text-lg font-semibold dark:font-medium">
@@ -109,7 +109,7 @@
               </div>
               <h3 class="text-3xl md:text-6xl font-black mb-6 font-outfit uppercase text-slate-950 dark:text-white leading-[0.95] tracking-tighter">Konektivitas Global Tanpa Batas.</h3>
               <p class="text-slate-600 dark:text-slate-400 text-base md:text-lg font-semibold leading-relaxed max-w-lg">
-                Menyatukan kekuatan industri energi, logistik maritim, dan integrasi sistem digital dalam satu ekosistem yang tangguh.
+                Menyatukan kekuatan industri energi, advertising kreatif, dan integrasi sistem digital dalam satu ekosistem yang tangguh.
               </p>
             </div>
             
@@ -126,7 +126,7 @@
                     <Ship class="text-electric-blue" :size="28" />
                   </div>
                   <p class="text-xl font-black font-outfit uppercase text-slate-900 dark:text-white mb-2">Perkapalan</p>
-                  <p class="text-[10px] font-bold text-slate-500 uppercase tracking-widest">Maritime Logistics Hub</p>
+                  <p class="text-[10px] font-bold text-slate-500 uppercase tracking-widest">Creative Media Hub</p>
                </div>
                <div class="p-8 rounded-[2.5rem] bg-slate-50 dark:bg-slate-800/50 border-2 border-slate-200 dark:border-slate-700 hover:border-cyan-mint transition-all duration-500 group/item">
                   <div class="w-12 h-12 rounded-xl bg-cyan-mint/10 flex items-center justify-center mb-6">
@@ -156,9 +156,9 @@
 <script setup>
 import { onMounted } from 'vue';
 import { 
-  Flame, Ship, Cpu, Activity, Database, Box, 
+  Flame, Megaphone, Cpu, Activity, Database, Box, 
   Settings as Wrench, Globe, BarChart2, Sun, Layers, ShieldCheck,
-  Megaphone, Monitor, Terminal
+  Monitor, Terminal
 } from 'lucide-vue-next';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';

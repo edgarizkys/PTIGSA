@@ -8,14 +8,14 @@
         </div>
         <h2 class="text-4xl md:text-6xl font-black mb-6 flow-reveal font-outfit uppercase text-text-primary">Ekosistem Terintegrasi.</h2>
         <p class="text-text-secondary max-w-2xl mx-auto text-lg flow-reveal font-medium">
-          Bagaimana Teknologi menjadi otak yang mengoptimalkan aliran Energi dan presisi Logistik secara real-time.
+          Bagaimana Teknologi menjadi otak yang mengoptimalkan aliran Energi dan presisi Advertising secara real-time.
         </p>
       </div>
 
       <div class="relative h-[600px] flex items-center justify-center">
         <!-- Center Brain (Tech) -->
         <div class="absolute z-20 w-52 h-52 glass rounded-[3rem] flex flex-col items-center justify-center border-2 border-cyan-mint/40 shadow-[0_0_50px_rgba(0,255,209,0.15)] bg-bg-primary">
-          <Cpu class="text-cyan-mint mb-3 animate-pulse" :size="56" />
+          <Megaphone class="text-cyan-mint mb-3 animate-pulse" :size="56" />
           <p class="text-[10px] font-black uppercase tracking-[0.3em] text-cyan-mint">Intelligence</p>
         </div>
 
@@ -52,9 +52,9 @@
           <p class="text-[8px] font-bold text-slate-500 mt-1 uppercase">Fuel Stream</p>
         </div>
         <div class="absolute top-10 right-[12%] w-44 h-44 glass rounded-3xl flex flex-col items-center justify-center border-2 border-electric-blue/30 bg-bg-primary shadow-xl">
-          <Ship class="text-electric-blue mb-3" :size="40" />
-          <p class="text-xs font-black uppercase text-text-primary tracking-widest">Logistik</p>
-          <p class="text-[8px] font-bold text-slate-500 mt-1 uppercase">Integrated Supply</p>
+          <Megaphone class="text-electric-blue mb-3" :size="40" />
+          <p class="text-xs font-black uppercase text-text-primary tracking-widest">Advertising</p>
+          <p class="text-[8px] font-bold text-slate-500 mt-1 uppercase">Creative Media</p>
         </div>
         <div class="absolute bottom-10 left-[12%] w-44 h-44 glass rounded-3xl flex flex-col items-center justify-center border border-glass-border bg-bg-primary shadow-xl">
           <BarChart4 class="text-text-primary mb-3" :size="40" />
@@ -73,7 +73,7 @@
 
 <script setup>
 import { onMounted } from 'vue';
-import { Cpu, Flame, Ship, BarChart4, ShieldCheck } from 'lucide-vue-next';
+import { Megaphone, Flame, BarChart4, ShieldCheck } from 'lucide-vue-next';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 

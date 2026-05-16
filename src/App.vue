@@ -8,6 +8,7 @@
       <Stats />
       <BentoGrid />
       <IntegratedFlow />
+      <OrgChart />
       <ESGSection />
       <InteractiveMap />
       <ContactHub />
@@ -31,6 +32,7 @@ import IntegratedFlow from './components/IntegratedFlow.vue';
 import ESGSection from './components/ESGSection.vue';
 import InteractiveMap from './components/InteractiveMap.vue';
 import ContactHub from './components/ContactHub.vue';
+import OrgChart from './components/OrgChart.vue';
 import ContactFloating from './components/ContactFloating.vue';
 
 gsap.registerPlugin(ScrollTrigger);

@@ -8,9 +8,9 @@
               <span class="w-2 h-2 bg-amber-gold rounded-full animate-pulse"></span>
               <span class="text-[10px] font-black uppercase tracking-[0.3em] text-amber-gold">Hubungi Kami</span>
             </div>
-            <h2 class="text-4xl md:text-[5rem] font-black mb-10 leading-[1] font-outfit uppercase">BERKAH JASA <br /> <span class="text-gradient-amber">ABADI.</span></h2>
+            <h2 class="text-4xl md:text-[5rem] font-black mb-10 leading-[1] font-outfit uppercase">PT. BERKAH JASA <br /> <span class="text-gradient-amber">ABADI.</span></h2>
             <p class="text-text-secondary text-xl mb-12 max-w-md leading-relaxed">
-              Bermitra dengan kami untuk mendefinisikan ulang sinergi antara energi, logistik, dan kecerdasan digital dalam skala profesional.
+              Bermitra dengan kami untuk mendefinisikan ulang sinergi antara energi, advertising, dan kecerdasan digital dalam skala profesional.
             </p>
             
             <div class="space-y-10">
@@ -72,8 +72,8 @@
         <!-- Footer Bottom -->
         <div class="mt-32 pt-16 border-t border-glass-border flex flex-col md:flex-row justify-between items-center gap-10">
           <div class="flex items-center gap-4">
-             <div class="w-12 h-12 bg-white rounded-xl flex items-center justify-center overflow-hidden p-1 shadow-lg border border-slate-100 mb-4">
-               <img src="../assets/logo.png" alt="Logo" class="w-full h-full object-contain" />
+             <div class="w-16 h-16 bg-white rounded-2xl flex items-center justify-center overflow-hidden p-1 shadow-2xl border border-slate-100 mb-6">
+               <img src="../assets/logo.png" alt="Logo" class="w-full h-full object-contain scale-125" />
              </div>
              <span class="text-2xl font-black text-text-primary uppercase font-outfit tracking-tighter">{{ globalConfig.branding.name }}</span>
           </div>

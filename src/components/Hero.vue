@@ -21,22 +21,30 @@
 
     <div class="container mx-auto px-6 relative z-10">
       <div class="max-w-5xl">
-        <div class="inline-flex items-center gap-3 px-5 py-2 rounded-full glass border border-glass-border mb-10 hero-reveal">
-          <div class="flex gap-1">
-            <span class="w-1.5 h-1.5 bg-amber-gold rounded-full animate-pulse"></span>
-            <span class="w-1.5 h-1.5 bg-electric-blue rounded-full animate-pulse [animation-delay:200ms]"></span>
-            <span class="w-1.5 h-1.5 bg-cyan-mint rounded-full animate-pulse [animation-delay:400ms]"></span>
+        <div class="flex flex-col md:flex-row items-center gap-10 mb-16 hero-reveal">
+          <div class="w-32 h-32 md:w-56 md:h-56 bg-white rounded-[3rem] flex items-center justify-center p-2 shadow-2xl border border-white/20 overflow-hidden">
+            <img src="../assets/logo.png" alt="Logo" class="w-full h-full object-contain scale-125" />
           </div>
-          <span class="text-[9px] font-black uppercase tracking-[0.4em] text-text-primary">Corporate Excellence V2.2</span>
+          <div>
+            <div class="inline-flex items-center gap-3 px-5 py-2 rounded-full glass border border-glass-border mb-4">
+              <div class="flex gap-1">
+                <span class="w-1.5 h-1.5 bg-amber-gold rounded-full animate-pulse"></span>
+                <span class="w-1.5 h-1.5 bg-electric-blue rounded-full animate-pulse [animation-delay:200ms]"></span>
+                <span class="w-1.5 h-1.5 bg-cyan-mint rounded-full animate-pulse [animation-delay:400ms]"></span>
+              </div>
+              <span class="text-[9px] font-black uppercase tracking-[0.4em] text-text-primary">Corporate Excellence V2.2</span>
+            </div>
+            <p class="text-amber-gold font-bold uppercase tracking-[0.5em] text-xs ml-2">PT. BERKAH JASA ABADI</p>
+          </div>
         </div>
         
         <h1 class="text-4xl md:text-6xl lg:text-[6.8rem] font-black mb-10 leading-[0.9] md:leading-[0.85] hero-reveal font-outfit uppercase tracking-tighter text-text-primary">
           Masa Depan <br />
-          <span class="text-gradient-amber">Energi</span> & <span class="text-gradient-blue">Logistik.</span>
+          <span class="text-gradient-amber">Energi</span> & <span class="text-gradient-blue">Advertising.</span>
         </h1>
         
         <p class="text-xl md:text-2xl text-text-secondary mb-16 max-w-3xl leading-relaxed hero-reveal font-medium">
-          Membangun sinergi cerdas antara infrastruktur fisik dan kecerdasan digital untuk menggerakkan ekonomi global yang berkelanjutan.
+          Membangun sinergi cerdas antara infrastruktur fisik, advertising kreatif, dan kecerdasan digital untuk masa depan berkelanjutan.
         </p>
 
         <div class="flex flex-wrap gap-8 hero-reveal">

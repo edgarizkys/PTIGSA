@@ -17,7 +17,7 @@ import { MessageCircle } from 'lucide-vue-next';
 import { computed } from 'vue';
 
 const phoneNumber = '6281234567890';
-const message = 'Halo PT. BERKAH JASA ABADI, saya tertarik dengan layanan logistik dan solusi keahlian industri Anda. Bisa kita diskusikan peluang kerja sama?';
+const message = 'Halo PT. BERKAH JASA ABADI, saya tertarik dengan layanan advertising dan solusi keahlian industri Anda. Bisa kita diskusikan peluang kerja sama?';
 
 const waLink = computed(() => {
   return `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;

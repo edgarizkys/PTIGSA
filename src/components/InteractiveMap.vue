@@ -8,7 +8,7 @@
         </div>
         <h2 class="text-3xl md:text-6xl font-black mb-6 font-outfit uppercase tracking-tighter text-text-primary">Jejak Operasional Indonesia.</h2>
         <p class="text-text-secondary max-w-2xl mx-auto text-lg leading-relaxed font-medium">
-          Menghubungkan simpul-simpul industri strategis dari Sabang sampai Merauke melalui infrastruktur energi dan logistik yang terintegrasi.
+          Menghubungkan simpul-simpul industri strategis dari Sabang sampai Merauke melalui infrastruktur energi dan advertising yang terintegrasi.
         </p>
       </div>
 

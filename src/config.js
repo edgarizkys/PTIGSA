@@ -3,12 +3,12 @@ import { reactive } from 'vue';
 export const globalConfig = reactive({
   branding: {
     name: 'PT. BERKAH JASA ABADI',
-    shortName: 'BERKAH JASA',
-    tagline: 'Sinergi Keahlian, Logistik, dan Integritas untuk Masa Depan Abadi',
+    shortName: 'PT. BERKAH JASA',
+    tagline: 'Sinergi Keahlian, Energi, dan Integritas untuk Masa Depan Abadi',
   },
   links: {
     whatsapp: 'https://wa.me/6281234567890',
-    email: 'contact@iseglobalanugerah.com',
+    email: 'info@berkahjasaabadi.co.id',
     portal: '#portal',
   },
   pillars: {
@@ -18,8 +18,8 @@ export const globalConfig = reactive({
       accent: '#FFBF00',
     },
     logistics: {
-      title: 'Logistik Cerdas',
-      desc: 'Manajemen rantai pasok global, pengiriman kargo, dan mobilisasi aset dengan presisi tinggi.',
+      title: 'Advertising & Media',
+      desc: 'Solusi periklanan kreatif, manajemen kampanye digital, dan branding strategis untuk visibilitas maksimal.',
       accent: '#007BFF',
     },
     tech: {
