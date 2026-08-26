@@ -18,23 +18,43 @@
         <!-- Left Column: 4 Petrova Feature Cards -->
         <div class="lg:col-span-6 grid grid-cols-1 sm:grid-cols-2 gap-6">
           
-          <!-- Box 1: Bright Acid Lime Card (#CCFF00) - Oil & Gas -->
-          <div class="petrova-card-lime flex flex-col justify-between min-h-[260px] p-6 sm:p-8">
+          <!-- Box 1: Bright Acid Lime Card (#CCFF00) - Oil & Gas Energy + B50 Sample Badge -->
+          <div class="petrova-card-lime flex flex-col justify-between min-h-[280px] p-6 sm:p-8 relative group">
             <div>
-              <span class="px-2.5 py-1 rounded bg-slate-950 text-white text-[9px] font-black uppercase tracking-widest block w-max mb-4">{{ t('services.div1Tag') }}</span>
+              <div class="flex justify-between items-start mb-4">
+                <span class="px-2.5 py-1 rounded bg-slate-950 text-white text-[9px] font-black uppercase tracking-widest block">{{ t('services.div1Tag') }}</span>
+                <span class="px-2 py-0.5 rounded bg-slate-950/90 text-[#CCFF00] text-[8px] font-black uppercase tracking-wider animate-pulse">SAMPEL B50 READY</span>
+              </div>
+              
               <h3 class="text-xl sm:text-2xl font-black font-outfit uppercase text-slate-950 mb-2">{{ t('services.div1Title') }}</h3>
-              <p class="text-slate-900 text-xs font-semibold leading-relaxed">
+              <p class="text-slate-900 text-xs font-semibold leading-relaxed mb-4">
                 {{ t('services.div1Desc') }}
               </p>
+
+              <!-- Lab Spec Micro Grid (B50 Biofuel Sample Specs) -->
+              <div class="grid grid-cols-2 gap-2 p-2.5 rounded-xl bg-slate-950/10 border border-slate-950/20 text-[9px] font-bold text-slate-950 mb-4">
+                <div>
+                  <span class="text-slate-700 block text-[8px] font-black uppercase">CETANE NUMBER</span>
+                  <span class="font-outfit font-black text-xs">55+ (Ultra Grade)</span>
+                </div>
+                <div>
+                  <span class="text-slate-700 block text-[8px] font-black uppercase">KANDUNGAN SULFUR</span>
+                  <span class="font-outfit font-black text-xs">&lt; 10 PPM (Clean)</span>
+                </div>
+              </div>
             </div>
-            <div class="pt-4 border-t border-slate-950/20 flex justify-between items-center text-[10px] font-black uppercase">
-              <span>{{ t('services.div1Link') }}</span>
-              <span>→</span>
-            </div>
+
+            <button 
+              @click="openB50Modal = true" 
+              class="pt-3 border-t border-slate-950/20 flex justify-between items-center text-[10px] font-black uppercase text-slate-950 hover:underline cursor-pointer"
+            >
+              <span>UJI SAMPEL & SPESIFIKASI LAB B50</span>
+              <span>🔍</span>
+            </button>
           </div>
 
           <!-- Box 2: Metric Gauge Box (90%) -->
-          <div class="petrova-card-white flex flex-col justify-between min-h-[260px] p-6 sm:p-8">
+          <div class="petrova-card-white flex flex-col justify-between min-h-[280px] p-6 sm:p-8">
             <div>
               <div class="flex justify-between items-center mb-4">
                 <div class="w-7 h-7 rounded bg-slate-950 p-1 flex items-center justify-center">
@@ -53,7 +73,7 @@
           </div>
 
           <!-- Box 3: Dark Slate Box (#0A0F1D) - Advertising Media -->
-          <div class="petrova-card-dark flex flex-col justify-between min-h-[260px] p-6 sm:p-8">
+          <div class="petrova-card-dark flex flex-col justify-between min-h-[280px] p-6 sm:p-8">
             <div>
               <span class="px-2.5 py-1 rounded bg-[#CCFF00] text-slate-950 text-[9px] font-black uppercase tracking-widest block w-max mb-4">{{ t('services.div2Tag') }}</span>
               <h3 class="text-xl sm:text-2xl font-black font-outfit uppercase text-white mb-2">{{ t('services.div2Title') }}</h3>
@@ -68,7 +88,7 @@
           </div>
 
           <!-- Box 4: White Box with Lime Accent Border - AI SaaS Developer -->
-          <div class="petrova-card-white border-2 border-[#CCFF00] flex flex-col justify-between min-h-[260px] p-6 sm:p-8">
+          <div class="petrova-card-white border-2 border-[#CCFF00] flex flex-col justify-between min-h-[280px] p-6 sm:p-8">
             <div>
               <span class="px-2.5 py-1 rounded bg-slate-950 text-white text-[9px] font-black uppercase tracking-widest block w-max mb-4">{{ t('services.div3Tag') }}</span>
               <h3 class="text-xl sm:text-2xl font-black font-outfit uppercase text-slate-950 mb-2">{{ t('services.div3Title') }}</h3>
@@ -195,9 +215,88 @@
       </div>
 
     </div>
+
+    <!-- Modal Specification & Sample Order B50 -->
+    <transition name="fade">
+      <div v-if="openB50Modal" class="fixed inset-0 z-[300] bg-slate-950/80 backdrop-blur-md flex items-center justify-center p-4">
+        <div class="petrova-card-white border-2 border-slate-950 p-6 sm:p-8 max-w-lg w-full relative shadow-2xl bg-white">
+          
+          <button @click="openB50Modal = false" class="absolute top-4 right-4 w-8 h-8 rounded-full bg-slate-100 hover:bg-slate-200 font-black text-slate-950 flex items-center justify-center">
+            ✕
+          </button>
+
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-9 h-9 rounded-xl bg-[#CCFF00] p-1.5 flex items-center justify-center border border-slate-950">
+              <img src="/bja_logo.png" alt="BJA" class="w-full h-full object-contain" />
+            </div>
+            <div>
+              <span class="text-[9px] font-black text-slate-500 uppercase tracking-widest block">SPESIFIKASI UJI LABORATORIUM</span>
+              <h3 class="text-xl font-black font-outfit text-slate-950 uppercase">B50 BIOFUEL INDUSTRI</h3>
+            </div>
+          </div>
+
+          <p class="text-xs text-slate-600 mb-6 font-medium leading-relaxed">
+            Formulasi bahan bakar nabati B50 (50% Biofuel FAME Palm Oil Mix) dengan tingkat kemurnian tinggi untuk mesin industri berat dan kendaraan armada logistik skala nasional.
+          </p>
+
+          <!-- Specifications Table -->
+          <div class="space-y-2 mb-6 border border-slate-200 rounded-xl p-3 bg-slate-50 text-xs">
+            <div class="flex justify-between py-1 border-b border-slate-200">
+              <span class="text-slate-500 font-medium">Cetane Number Index</span>
+              <span class="font-black text-slate-950">Min. 55.0</span>
+            </div>
+            <div class="flex justify-between py-1 border-b border-slate-200">
+              <span class="text-slate-500 font-medium">Sulfur Content</span>
+              <span class="font-black text-slate-950">&lt; 10 PPM (Euro IV Standard)</span>
+            </div>
+            <div class="flex justify-between py-1 border-b border-slate-200">
+              <span class="text-slate-500 font-medium">Flash Point</span>
+              <span class="font-black text-slate-950">Min. 130°C</span>
+            </div>
+            <div class="flex justify-between py-1">
+              <span class="text-slate-500 font-medium">Sertifikasi Mutu</span>
+              <span class="font-black text-[#0A0F1D]">ISO 9001:2015 & Ditjen Migas</span>
+            </div>
+          </div>
+
+          <div class="flex flex-col sm:flex-row items-center gap-3">
+            <a 
+              href="https://wa.me/6282114242634?text=Halo%20PT%20Berkah%20Jasa%20Abadi,%20saya%20ingin%20meminta%20sampel%20dan%20dokumen%20spesifikasi%20BBM%20B50%20Industri" 
+              target="_blank" 
+              class="petrova-btn-lime w-full text-center text-xs font-black uppercase"
+            >
+              Minta Sampel B50 via WhatsApp
+            </a>
+            <button 
+              @click="openB50Modal = false" 
+              class="px-4 py-2.5 rounded-xl border border-slate-300 text-xs font-black text-slate-700 hover:bg-slate-100 w-full sm:w-auto"
+            >
+              Tutup
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </transition>
+
   </section>
 </template>
 
 <script setup>
+import { ref } from 'vue';
 import { t } from '../i18n';
+
+const openB50Modal = ref(false);
 </script>
+
+<style scoped>
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.25s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+</style>

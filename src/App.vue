@@ -7,9 +7,9 @@
       <Hero />
       <Stats />
       <BentoGrid />
+      <B50SampleShowcase />
       <IntegratedFlow />
       <OrgChart />
-      <ESGSection />
       <InteractiveMap />
       <ContactHub />
     </main>
@@ -28,8 +28,8 @@ import Navigation from './components/Navigation.vue';
 import Hero from './components/Hero.vue';
 import Stats from './components/Stats.vue';
 import BentoGrid from './components/BentoGrid.vue';
+import B50SampleShowcase from './components/B50SampleShowcase.vue';
 import IntegratedFlow from './components/IntegratedFlow.vue';
-import ESGSection from './components/ESGSection.vue';
 import InteractiveMap from './components/InteractiveMap.vue';
 import ContactHub from './components/ContactHub.vue';
 import OrgChart from './components/OrgChart.vue';
@@ -42,9 +42,10 @@ onMounted(() => {
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
       e.preventDefault();
-      document.querySelector(this.getAttribute('href')).scrollIntoView({
-        behavior: 'smooth'
-      });
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth' });
+      }
     });
   });
 });
