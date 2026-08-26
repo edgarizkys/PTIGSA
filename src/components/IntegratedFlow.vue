@@ -1,6 +1,6 @@
 <template>
   <section id="projects" class="py-20 bg-[#EFEFEF]">
-    <div class="container mx-auto px-6">
+    <div class="container mx-auto px-4 sm:px-6">
       
       <!-- Section 1: Built to Perform Accordion Showcase -->
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-20 items-start">
@@ -88,7 +88,8 @@
           alt="Site Workers - Petrova" 
           class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000"
         />
-        <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/30 to-transparent"></div>
+        <!-- Darker Gradient Overlay for 100% Crisp White Text Contrast -->
+        <div class="absolute inset-0 bg-gradient-to-t from-black/95 via-black/60 to-transparent"></div>
 
         <!-- Overlay Text & Indicator -->
         <div class="absolute top-8 left-8">
@@ -97,16 +98,17 @@
 
         <div class="absolute bottom-8 left-8 right-8 flex flex-col md:flex-row md:items-end justify-between gap-6 text-white">
           <div class="max-w-2xl">
-            <h3 class="text-3xl md:text-5xl font-black font-outfit uppercase tracking-tight mb-2">
+            <!-- 100% Pure White Bold Font Title -->
+            <h3 class="text-2xl sm:text-4xl md:text-5xl font-black font-outfit uppercase tracking-tight mb-2 text-white drop-shadow-lg leading-tight">
               {{ t('projects.bannerTitle') }}
             </h3>
-            <p class="text-slate-300 text-xs md:text-sm font-medium">
+            <p class="text-slate-200 text-xs sm:text-sm font-medium drop-shadow-sm">
               {{ t('projects.bannerDesc') }}
             </p>
           </div>
 
           <div class="flex items-center gap-3">
-            <button class="w-12 h-12 rounded-full bg-[#CCFF00] text-slate-950 flex items-center justify-center font-black shadow-lg">→</button>
+            <button class="w-12 h-12 rounded-full bg-[#CCFF00] text-slate-950 flex items-center justify-center font-black shadow-lg hover:scale-105 transition-transform">→</button>
           </div>
         </div>
       </div>
