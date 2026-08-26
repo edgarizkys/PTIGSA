@@ -1,107 +1,120 @@
 <template>
-  <section id="ecosystem" class="py-32 relative overflow-hidden bg-bg-secondary">
+  <section id="projects" class="py-20 bg-[#EFEFEF]">
     <div class="container mx-auto px-6">
-      <div class="text-center mb-20">
-        <div class="inline-flex items-center gap-3 px-5 py-2 rounded-full bg-cyan-mint/10 border border-cyan-mint/20 mb-6 flow-reveal">
-          <span class="w-2 h-2 bg-cyan-mint rounded-full animate-pulse"></span>
-          <span class="text-[10px] font-black uppercase tracking-[0.3em] text-cyan-mint">Mesin Sinergi BJA</span>
+      
+      <!-- Section 1: Built to Perform Accordion Showcase -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-20 items-start">
+        
+        <!-- Left Title Column -->
+        <div class="lg:col-span-5">
+          <div class="mb-4">
+            <span class="petrova-tag">{{ t('projects.tag') }}</span>
+          </div>
+          <h2 class="text-4xl md:text-6xl font-black font-outfit uppercase text-slate-950 leading-none tracking-tight mb-6">
+            {{ t('projects.headline') }}
+          </h2>
+          <p class="text-slate-600 text-base leading-relaxed mb-8 font-normal">
+            {{ t('projects.desc') }}
+          </p>
+
+          <!-- Small Thumbnail Photos -->
+          <div class="flex items-center gap-4">
+            <div class="w-20 h-20 rounded-2xl overflow-hidden shadow-md border border-slate-300">
+              <img src="/hero_petrova_rig.jpg" alt="Rig" class="w-full h-full object-cover" />
+            </div>
+            <div class="w-20 h-20 rounded-2xl overflow-hidden shadow-md border border-slate-300">
+              <img src="/petrova_site_workers.jpg" alt="Workers" class="w-full h-full object-cover" />
+            </div>
+          </div>
         </div>
-        <h2 class="text-4xl md:text-6xl font-black mb-6 flow-reveal font-outfit uppercase text-text-primary">Ekosistem Terintegrasi.</h2>
-        <p class="text-text-secondary max-w-2xl mx-auto text-lg flow-reveal font-medium">
-          Bagaimana Teknologi menjadi otak yang mengoptimalkan aliran Energi dan presisi Advertising secara real-time.
-        </p>
+
+        <!-- Right Accordion Column (Expanded Dark Card) -->
+        <div class="lg:col-span-7 space-y-4">
+          
+          <!-- Item 1 (Expanded Dark Petrova Card) -->
+          <div class="petrova-card-dark p-8 shadow-2xl">
+            <div class="flex justify-between items-center mb-6">
+              <h3 class="text-2xl font-black font-outfit text-white uppercase tracking-tight">
+                {{ t('projects.item1Title') }}
+              </h3>
+              <span class="px-2.5 py-1 rounded bg-[#CCFF00] text-slate-950 text-[10px] font-black uppercase">ACTIVE</span>
+            </div>
+
+            <p class="text-slate-300 text-xs leading-relaxed mb-8">
+              {{ t('projects.item1Desc') }}
+            </p>
+
+            <!-- Expanded Spec Metrics Row -->
+            <div class="grid grid-cols-3 gap-4 pt-6 border-t border-slate-800 text-center">
+              <div>
+                <span class="text-2xl font-black text-[#CCFF00] font-outfit block">250+</span>
+                <span class="text-[9px] font-bold text-slate-400 uppercase tracking-widest">{{ t('projects.item1Stat1') }}</span>
+              </div>
+              <div>
+                <span class="text-2xl font-black text-[#CCFF00] font-outfit block">15+</span>
+                <span class="text-[9px] font-bold text-slate-400 uppercase tracking-widest">{{ t('projects.item1Stat2') }}</span>
+              </div>
+              <div>
+                <span class="text-2xl font-black text-[#CCFF00] font-outfit block">99.8%</span>
+                <span class="text-[9px] font-bold text-slate-400 uppercase tracking-widest">{{ t('projects.item1Stat3') }}</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 2 (White Accordion Tab) -->
+          <div class="petrova-card-white p-6 flex justify-between items-center cursor-pointer hover:bg-white">
+            <h3 class="text-xl font-bold font-outfit text-slate-950 uppercase">
+              {{ t('projects.item2Title') }}
+            </h3>
+            <span class="petrova-tag-dark">Show Details →</span>
+          </div>
+
+          <!-- Item 3 (White Accordion Tab) -->
+          <div class="petrova-card-white p-6 flex justify-between items-center cursor-pointer hover:bg-white">
+            <h3 class="text-xl font-bold font-outfit text-slate-950 uppercase">
+              {{ t('projects.item3Title') }}
+            </h3>
+            <span class="petrova-tag-dark">Show Details →</span>
+          </div>
+
+        </div>
+
       </div>
 
-      <div class="relative h-[600px] flex items-center justify-center">
-        <!-- Center Brain (Tech) -->
-        <div class="absolute z-20 w-52 h-52 glass rounded-[3rem] flex flex-col items-center justify-center border-2 border-cyan-mint/40 shadow-[0_0_50px_rgba(0,255,209,0.15)] bg-bg-primary">
-          <Megaphone class="text-cyan-mint mb-3 animate-pulse" :size="56" />
-          <p class="text-[10px] font-black uppercase tracking-[0.3em] text-cyan-mint">Intelligence</p>
+      <!-- Section 2: Full-Width Industrial Slider Banner (02 / 04) -->
+      <div class="relative w-full h-[400px] md:h-[500px] rounded-3xl overflow-hidden shadow-2xl border border-slate-300 group">
+        <img 
+          src="/petrova_site_workers.jpg" 
+          alt="Site Workers - Petrova" 
+          class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000"
+        />
+        <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/30 to-transparent"></div>
+
+        <!-- Overlay Text & Indicator -->
+        <div class="absolute top-8 left-8">
+          <span class="petrova-tag">{{ t('projects.bannerTag') }}</span>
         </div>
 
-        <!-- SVG Flow Lines -->
-        <svg class="absolute inset-0 w-full h-full pointer-events-none" viewBox="0 0 1000 600">
-          <!-- Energy to Tech -->
-          <path d="M250,150 Q500,100 500,220" stroke="url(#gradient-amber)" stroke-width="3" fill="none" class="dash-flow" />
-          <!-- Logistics to Tech -->
-          <path d="M750,150 Q500,100 500,220" stroke="url(#gradient-blue)" stroke-width="3" fill="none" class="dash-flow" />
-          <!-- Tech to Outputs -->
-          <path d="M500,380 Q500,500 250,450" stroke="url(#gradient-cyan)" stroke-width="3" fill="none" class="dash-flow" />
-          <path d="M500,380 Q500,500 750,450" stroke="url(#gradient-cyan)" stroke-width="3" fill="none" class="dash-flow" />
+        <div class="absolute bottom-8 left-8 right-8 flex flex-col md:flex-row md:items-end justify-between gap-6 text-white">
+          <div class="max-w-2xl">
+            <h3 class="text-3xl md:text-5xl font-black font-outfit uppercase tracking-tight mb-2">
+              {{ t('projects.bannerTitle') }}
+            </h3>
+            <p class="text-slate-300 text-xs md:text-sm font-medium">
+              {{ t('projects.bannerDesc') }}
+            </p>
+          </div>
 
-          <defs>
-            <linearGradient id="gradient-amber" x1="0%" y1="0%" x2="100%" y2="0%">
-              <stop offset="0%" stop-color="var(--color-amber-gold)" />
-              <stop offset="100%" stop-color="var(--color-cyan-mint)" />
-            </linearGradient>
-            <linearGradient id="gradient-blue" x1="0%" y1="0%" x2="100%" y2="0%">
-              <stop offset="0%" stop-color="var(--color-electric-blue)" />
-              <stop offset="100%" stop-color="var(--color-cyan-mint)" />
-            </linearGradient>
-            <linearGradient id="gradient-cyan" x1="0%" y1="0%" x2="100%" y2="0%">
-              <stop offset="0%" stop-color="var(--color-cyan-mint)" />
-              <stop offset="100%" stop-color="transparent" />
-            </linearGradient>
-          </defs>
-        </svg>
-
-        <!-- Peripheral Nodes -->
-        <div class="absolute top-10 left-[12%] w-44 h-44 glass rounded-3xl flex flex-col items-center justify-center border-2 border-amber-gold/30 bg-bg-primary shadow-xl">
-          <Flame class="text-amber-gold mb-3" :size="40" />
-          <p class="text-xs font-black uppercase text-text-primary tracking-widest">Energi</p>
-          <p class="text-[8px] font-bold text-slate-500 mt-1 uppercase">Fuel Stream</p>
-        </div>
-        <div class="absolute top-10 right-[12%] w-44 h-44 glass rounded-3xl flex flex-col items-center justify-center border-2 border-electric-blue/30 bg-bg-primary shadow-xl">
-          <Megaphone class="text-electric-blue mb-3" :size="40" />
-          <p class="text-xs font-black uppercase text-text-primary tracking-widest">Advertising</p>
-          <p class="text-[8px] font-bold text-slate-500 mt-1 uppercase">Creative Media</p>
-        </div>
-        <div class="absolute bottom-10 left-[12%] w-44 h-44 glass rounded-3xl flex flex-col items-center justify-center border border-glass-border bg-bg-primary shadow-xl">
-          <BarChart4 class="text-text-primary mb-3" :size="40" />
-          <p class="text-xs font-black uppercase text-text-primary tracking-widest">Optimasi</p>
-          <p class="text-[8px] font-bold text-slate-500 mt-1 uppercase">Efficiency +35%</p>
-        </div>
-        <div class="absolute bottom-10 right-[12%] w-44 h-44 glass rounded-3xl flex flex-col items-center justify-center border border-glass-border bg-bg-primary shadow-xl">
-          <ShieldCheck class="text-text-primary mb-3" :size="40" />
-          <p class="text-xs font-black uppercase text-text-primary tracking-widest">Keunggulan</p>
-          <p class="text-[8px] font-bold text-slate-500 mt-1 uppercase">Quality Assured</p>
+          <div class="flex items-center gap-3">
+            <button class="w-12 h-12 rounded-full bg-[#CCFF00] text-slate-950 flex items-center justify-center font-black shadow-lg">→</button>
+          </div>
         </div>
       </div>
+
     </div>
   </section>
 </template>
 
 <script setup>
-import { onMounted } from 'vue';
-import { Megaphone, Flame, BarChart4, ShieldCheck } from 'lucide-vue-next';
-import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-
-gsap.registerPlugin(ScrollTrigger);
-
-onMounted(() => {
-  gsap.from('.flow-reveal', {
-    scrollTrigger: {
-      trigger: '#ecosystem',
-      start: 'top 80%',
-    },
-    y: 50,
-    opacity: 0,
-    duration: 1,
-    stagger: 0.2,
-    ease: 'power3.out',
-  });
-});
+import { t } from '../i18n';
 </script>
-
-<style scoped>
-.dash-flow {
-  stroke-dasharray: 12;
-  animation: dash 15s linear infinite;
-}
-
-@keyframes dash {
-  from { stroke-dashoffset: 600; }
-  to { stroke-dashoffset: 0; }
-}
-</style>

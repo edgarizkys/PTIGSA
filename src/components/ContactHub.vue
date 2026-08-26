@@ -1,101 +1,159 @@
 <template>
-  <footer id="contact" class="py-20 md:py-28 relative overflow-hidden bg-bg-secondary">
-    <div class="container mx-auto px-6">
-      <div class="glass rounded-[4rem] p-12 md:p-24 relative overflow-hidden border-t-2 border-glass-border">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
-          <div>
-            <div class="inline-flex items-center gap-3 px-5 py-2 rounded-full bg-amber-gold/10 border border-amber-gold/20 mb-10">
-              <span class="w-2 h-2 bg-amber-gold rounded-full animate-pulse"></span>
-              <span class="text-[10px] font-black uppercase tracking-[0.3em] text-amber-gold">Hubungi Kami</span>
-            </div>
-            <h2 class="text-4xl md:text-[5rem] font-black mb-10 leading-[1] font-outfit uppercase">PT. BERKAH JASA <br /> <span class="text-gradient-amber">ABADI.</span></h2>
-            <p class="text-text-secondary text-xl mb-12 max-w-md leading-relaxed">
-              Bermitra dengan kami untuk mendefinisikan ulang sinergi antara energi, advertising, dan kecerdasan digital dalam skala profesional.
-            </p>
-            
-            <div class="space-y-10">
-              <div class="flex items-center gap-8 group">
-                <div class="w-16 h-16 md:w-20 md:h-20 rounded-2xl md:rounded-3xl bg-bg-primary flex items-center justify-center border border-glass-border group-hover:border-amber-gold transition-all duration-500 shrink-0">
-                  <Mail class="text-text-primary" :size="24" />
-                </div>
-                <div class="min-w-0">
-                  <p class="text-[10px] font-black uppercase tracking-widest text-slate-500 mb-2">Email Korporat</p>
-                  <p class="text-lg md:text-2xl font-black text-text-primary font-outfit break-all">{{ globalConfig.links.email }}</p>
-                </div>
-              </div>
+  <div>
+    <!-- Section 1: Partner & Client Reviews ([REVIEWS]) - Infinite Horizontal Marquee Carousel -->
+    <section id="reviews" class="py-16 sm:py-20 bg-[#EFEFEF] overflow-hidden">
+      <div class="container mx-auto px-4 sm:px-6 mb-8 sm:mb-12">
+        <div class="max-w-3xl">
+          <div class="mb-3">
+            <span class="petrova-tag text-[9px] sm:text-[10px]">{{ t('reviews.tag') }}</span>
+          </div>
+          <h2 class="text-2xl sm:text-4xl md:text-5xl font-black font-outfit uppercase text-slate-950 leading-tight">
+            {{ t('reviews.headline') }}
+          </h2>
+        </div>
+      </div>
 
-              <div class="flex items-center gap-8 group">
-                <div class="w-16 h-16 md:w-20 md:h-20 rounded-2xl md:rounded-3xl bg-bg-primary flex items-center justify-center border border-glass-border group-hover:border-electric-blue transition-all duration-500 shrink-0">
-                  <MapPin class="text-text-primary" :size="24" />
-                </div>
-                <div class="min-w-0">
-                  <p class="text-[10px] font-black uppercase tracking-widest text-slate-500 mb-2">Kantor Pusat</p>
-                  <p class="text-lg md:text-2xl font-black text-text-primary font-outfit">Cilegon, Indonesia</p>
-                </div>
+      <!-- Infinite Marquee Slider Container (Moving continuously from Left to Right) -->
+      <div class="relative w-full overflow-hidden flex select-none py-2">
+        <div class="marquee-track flex gap-6 shrink-0">
+          <div 
+            v-for="(review, idx) in [...reviews, ...reviews, ...reviews]" 
+            :key="idx" 
+            class="petrova-card-white flex flex-col justify-between p-6 sm:p-8 w-[300px] sm:w-[360px] shrink-0 border-2 border-slate-300 hover:border-slate-950 transition-all duration-300"
+          >
+            <p class="text-xs text-slate-700 leading-relaxed font-medium mb-6">
+              "{{ t(review.quoteKey) }}"
+            </p>
+
+            <div class="flex items-center gap-3 pt-4 border-t border-slate-150">
+              <div class="w-9 h-9 rounded-full bg-[#CCFF00] p-1.5 flex items-center justify-center shrink-0 border border-slate-950 shadow">
+                <img src="/bja_logo.png" alt="BJA Logo" class="w-full h-full object-contain" />
+              </div>
+              <div>
+                <p class="text-xs font-bold text-slate-950">{{ review.author }}</p>
+                <p class="text-[9px] font-bold text-slate-500 uppercase">{{ t(review.roleKey) }}</p>
               </div>
             </div>
           </div>
+        </div>
+      </div>
 
-          <!-- Energy & Mining Visual Section -->
-          <div class="relative h-[400px] md:h-[550px] rounded-[2rem] md:rounded-[4rem] overflow-hidden border-4 border-glass-border shadow-2xl bg-bg-primary group">
-            <!-- Background Image -->
-            <img src="/energy_mining_hub.png" alt="Energy & Mining Industrial Hub" class="absolute inset-0 w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-1000" />
-            
-            <!-- Dark Overlay -->
-            <div class="absolute inset-0 bg-gradient-to-t from-bg-primary via-transparent to-transparent"></div>
-            
-            <!-- Floating Icons -->
-            <div class="absolute top-12 left-12 flex gap-4">
-               <div class="w-16 h-16 glass rounded-2xl flex items-center justify-center border border-amber-gold/30">
-                 <Flame class="text-amber-gold" :size="28" />
-               </div>
-               <div class="w-16 h-16 glass rounded-2xl flex items-center justify-center border border-electric-blue/30">
-                 <HardHat class="text-electric-blue" :size="28" />
-               </div>
+    </section>
+
+    <!-- Section 2: Giant Dark Petrova Footer ([GET IN TOUCH]) -->
+    <footer id="contact" class="py-16 sm:py-24 bg-[#0A0F1D] text-white border-t border-slate-800">
+      <div class="container mx-auto px-4 sm:px-6">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-12 mb-16 sm:mb-20 items-start">
+          <div class="lg:col-span-7">
+            <div class="mb-4 sm:mb-6">
+              <span class="petrova-tag-dark text-[9px] sm:text-[10px]">{{ t('footer.tag') }}</span>
             </div>
+            <h2 class="text-3xl sm:text-5xl md:text-7xl font-black font-outfit uppercase leading-none tracking-tight mb-6 sm:mb-8">
+              {{ t('footer.headline') }}
+            </h2>
+            <p class="text-slate-400 text-sm sm:text-base md:text-lg max-w-xl leading-relaxed mb-8">
+              {{ t('footer.desc') }}
+            </p>
+            
+            <a :href="globalConfig.links.whatsapp" target="_blank" class="petrova-btn-lime text-xs">
+              <span>{{ t('footer.connectWa') }}</span>
+              <ArrowUpRight :size="14" class="ml-2" />
+            </a>
+          </div>
 
-            <!-- Content Card -->
-            <div class="absolute bottom-6 left-6 right-6 md:bottom-10 md:left-10 md:right-10 glass p-6 md:p-10 rounded-[2rem] md:rounded-[2.5rem] border border-glass-border translate-y-4 group-hover:translate-y-0 transition-transform duration-500 shadow-2xl">
-              <div class="flex items-center gap-4 mb-4">
-                 <div class="w-8 h-8 md:w-10 md:h-10 bg-amber-gold/20 rounded-xl flex items-center justify-center">
-                    <Factory class="text-amber-gold" :size="16" />
-                 </div>
-                 <p class="text-base md:text-xl font-black text-text-primary font-outfit uppercase tracking-tighter">Sinergi Energi & Pertambangan</p>
+          <div class="lg:col-span-5 space-y-6 sm:space-y-8 glass p-6 sm:p-8 rounded-3xl border border-slate-800 bg-slate-900/60">
+            <div class="flex items-center gap-3 pb-4 border-b border-slate-800">
+              <div class="w-10 h-10 rounded-xl bg-[#CCFF00] p-1.5 flex items-center justify-center shadow-lg">
+                <img src="/bja_logo.png" alt="BJA Logo" class="w-full h-full object-contain" />
               </div>
-              <p class="text-[12px] md:text-sm text-text-secondary leading-relaxed font-medium">
-                Pusat operasional strategis yang mendukung rantai pasok energi dan manajemen infrastruktur pertambangan.
+              <span class="text-lg font-black font-outfit text-white uppercase tracking-wider">PT BERKAH JASA ABADI</span>
+            </div>
+            <div>
+              <p class="text-[10px] font-black uppercase tracking-widest text-[#CCFF00] mb-1">{{ t('footer.emailTag') }}</p>
+              <p class="text-lg sm:text-xl font-bold font-outfit text-white break-all">{{ globalConfig.links.email }}</p>
+            </div>
+            <div>
+              <p class="text-[10px] font-black uppercase tracking-widest text-[#CCFF00] mb-1">{{ t('footer.hqTag') }}</p>
+              <p class="text-lg sm:text-xl font-bold font-outfit text-white">{{ t('footer.hqVal') }}</p>
+            </div>
+            <div>
+              <p class="text-[10px] font-black uppercase tracking-widest text-[#CCFF00] mb-1">{{ t('footer.divTag') }}</p>
+              <p class="text-xs text-slate-400 leading-relaxed">
+                {{ t('footer.div1') }}<br />
+                {{ t('footer.div2') }}<br />
+                {{ t('footer.div3') }}
               </p>
             </div>
           </div>
         </div>
 
-        <!-- Footer Bottom -->
-        <div class="mt-32 pt-16 border-t border-glass-border flex flex-col md:flex-row justify-between items-center gap-10">
-          <div class="flex items-center gap-4">
-             <div class="w-16 h-16 bg-white rounded-2xl flex items-center justify-center overflow-hidden p-1 shadow-2xl border border-slate-100 mb-6">
-               <img src="../assets/logo.png" alt="Logo" class="w-full h-full object-contain scale-125" />
-             </div>
-             <span class="text-2xl font-black text-text-primary uppercase font-outfit tracking-tighter">{{ globalConfig.branding.name }}</span>
-          </div>
-          <div class="flex gap-10">
-            <a v-for="social in socials" :key="social.name" href="#" class="text-text-secondary hover:text-text-primary transition-colors">
-              <component :is="social.icon" :size="24" />
-            </a>
+        <!-- Giant Petrova Footer Brand Header -->
+        <div class="pt-12 sm:pt-16 border-t border-slate-800">
+          <h1 class="text-3xl sm:text-6xl md:text-8xl lg:text-[8.5rem] font-black uppercase font-outfit tracking-tighter text-white leading-none select-none break-words">
+            BERKAH JASA ABADI<span class="text-[#CCFF00]">.</span>
+          </h1>
+          <div class="flex flex-col md:flex-row justify-between items-center gap-4 mt-8 text-xs text-slate-500 font-medium">
+            <p>{{ t('footer.rights') }}</p>
+            <p>High-Performance Industrial Holding System</p>
           </div>
         </div>
+
       </div>
-    </div>
-  </footer>
+    </footer>
+  </div>
 </template>
 
 <script setup>
-import { Mail, MapPin, Linkedin, Twitter, Instagram, Youtube, Flame, HardHat, Zap, Factory } from 'lucide-vue-next';
+import { ArrowUpRight } from 'lucide-vue-next';
 import { globalConfig } from '../config';
+import { t } from '../i18n';
 
-const socials = [
-  { name: 'LinkedIn', icon: Linkedin },
-  { name: 'Twitter', icon: Twitter },
-  { name: 'Instagram', icon: Instagram },
-  { name: 'YouTube', icon: Youtube },
+const reviews = [
+  {
+    quoteKey: 'reviews.r1Quote',
+    author: 'Randi Pratama',
+    roleKey: 'reviews.r1Role',
+    initials: 'RP'
+  },
+  {
+    quoteKey: 'reviews.r2Quote',
+    author: 'Siti Rahmawati',
+    roleKey: 'reviews.r2Role',
+    initials: 'SR'
+  },
+  {
+    quoteKey: 'reviews.r3Quote',
+    author: 'Dr. H. Hendra',
+    roleKey: 'reviews.r3Role',
+    initials: 'HH'
+  },
+  {
+    quoteKey: 'reviews.r4Quote',
+    author: 'Budi Santoso',
+    roleKey: 'reviews.r4Role',
+    initials: 'BS'
+  }
 ];
 </script>
+
+<style scoped>
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee-left-to-right 30s linear infinite;
+}
+
+.marquee-track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes marquee-left-to-right {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+</style>
