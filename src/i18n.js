@@ -29,10 +29,10 @@ const translations = {
       offshoreTag: 'LOGISTIK ENERGI & INDUSTRI TERPADU',
       holdingBadge: 'HOLDING KORPORAT MULTI-SEKTOR',
       companyName: 'PT. BERKAH JASA ABADI',
-      headline: 'Sinergi Energi B30, Advertising, & AI SaaS',
+      headline: 'Sinergi Energi B50, Advertising, & AI SaaS',
       aboutUsTag: '[TENTANG KAMI]',
-      introStatement: 'PT Berkah Jasa Abadi memadukan rantai pasok BBM B30 industri, media visual outdoor DOOH, dan perangkat lunak SaaS berbasis AI.',
-      desc: 'BJA Holding menggabungkan keandalan pasokan bahan bakar industri B30, eksposur periklanan visual outdoor videotron, dan kecerdasan SaaS AI enterprise untuk efisiensi operasional.',
+      introStatement: 'PT Berkah Jasa Abadi memadukan rantai pasok BBM B50 industri, media visual outdoor DOOH, dan perangkat lunak SaaS berbasis AI.',
+      desc: 'BJA Holding menggabungkan keandalan pasokan bahan bakar industri B50, eksposur periklanan visual outdoor videotron, dan kecerdasan SaaS AI enterprise untuk efisiensi operasional.',
       exploreServices: 'Jelajahi Divisi'
     },
     stats: {
@@ -50,8 +50,8 @@ const translations = {
       headline: 'Teknologi Terpadu Multi-Sektor',
       div1Tag: 'DIVISI 01',
       div1Title: 'Oil & Gas Energy',
-      div1Desc: 'Suplai bahan bakar minyak industri B30 skala besar, armada tanker logistik, & pemeliharaan alat berat.',
-      div1Link: 'BBM B30 Supply',
+      div1Desc: 'Suplai bahan bakar minyak industri B50 skala besar, armada tanker logistik, & pemeliharaan alat berat.',
+      div1Link: 'BBM B50 Supply',
       
       div2Tag: 'DIVISI 02',
       div2Title: 'Advertising & Media',
@@ -68,13 +68,13 @@ const translations = {
 
       blueprintTag: 'SKEMATIK CETAK BIRU TERINTEGRASI',
       blueprintTitle: 'Arsitektur Skematik Sistem',
-      blueprintDesc: 'Pilih tab untuk melihat skema teknis pengiriman BBM B30, dashboard monitoring AI, atau billboard advertising.'
+      blueprintDesc: 'Pilih tab untuk melihat skema teknis pengiriman BBM B50, dashboard monitoring AI, atau billboard advertising.'
     },
     projects: {
       tag: '[PROYEK UTAMA]',
       headline: 'Performa & Ketahanan',
       desc: 'Solusi teruji PT Berkah Jasa Abadi pada 3 sektor bisnis terdepan dengan standar keselamatan dan efisiensi AI tanpa kompromi.',
-      item1Title: 'Distribusi BBM Industri B30',
+      item1Title: 'Distribusi BBM Industri B50',
       item1Desc: 'Suplai bahan bakar industri berkelanjutan menggunakan armada tangki berstandar keselamatan tinggi di seluruh Indonesia.',
       item1Stat1: 'Armada Tanker',
       item1Stat2: 'Wilayah Suplai',
@@ -88,7 +88,7 @@ const translations = {
     map: {
       tag: '[JANGKAUAN NASIONAL]',
       headline: 'Peta Logistik Indonesia',
-      desc: 'Menghubungkan simpul industri dari Sabang sampai Merauke melalui infrastruktur energi B30, media visual, dan SaaS AI.',
+      desc: 'Menghubungkan simpul industri dari Sabang sampai Merauke melalui infrastruktur energi B50, media visual, dan SaaS AI.',
       monitoring: 'SISTEM KENDALI OPERASIONAL TERHUBUNG',
       hqHubs: 'Kantor Pusat & Terminal BBM',
       nodes: 'Simpul Distribusi & Media'
@@ -96,7 +96,7 @@ const translations = {
     esg: {
       tag: '[ESG & SUSTAINABILITY]',
       headline: 'Industri Hijau Berkelanjutan',
-      desc: 'Kami mengintegrasikan energi bersih B30, pemanfaatan panel surya & tenaga angin, serta analisis AI telemetri.',
+      desc: 'Kami mengintegrasikan energi bersih B50, pemanfaatan panel surya & tenaga angin, serta analisis AI telemetri.',
       stat1Val: '40%',
       stat1Label: 'Efisiensi Armada',
       stat2Val: '100%',
@@ -119,7 +119,7 @@ const translations = {
     reviews: {
       tag: '[TESTIMONI MITRA]',
       headline: 'Testimoni Operator',
-      r1Quote: 'Solusi pasokan BBM B30 industri dari BJA Holding sangat andal, tepat waktu, dan memenuhi seluruh sertifikasi ISO.',
+      r1Quote: 'Solusi pasokan BBM B50 industri dari BJA Holding sangat andal, tepat waktu, dan memenuhi seluruh sertifikasi ISO.',
       r1Role: 'Direktur Operasional Energi',
       r2Quote: 'Jaringan videotron LED outdoor milik divisi advertising BJA memberikan jangkauan eksposur merek yang sangat signifikan.',
       r2Role: 'Kepala Pemasaran',
@@ -131,13 +131,13 @@ const translations = {
     footer: {
       tag: '[HUBUNGI KAMI]',
       headline: 'Inovasi Energi, Media & SaaS',
-      desc: 'Bermitra dengan PT Berkah Jasa Abadi untuk rantai pasok bahan bakar industri B30, media periklanan visual outdoor, dan solusi perangkat lunak AI SaaS terpusat.',
+      desc: 'Bermitra dengan PT Berkah Jasa Abadi untuk rantai pasok bahan bakar industri B50, media periklanan visual outdoor, dan solusi perangkat lunak AI SaaS terpusat.',
       connectWa: 'Hubungi via WhatsApp',
       emailTag: 'Email Korporat',
       hqTag: 'Kantor Pusat',
       hqVal: 'Cilegon, Banten - Indonesia',
       divTag: 'Divisi Utama Holding',
-      div1: '01. Suplai BBM Industri B30 & Logistik Tanker',
+      div1: '01. Suplai BBM Industri B50 & Logistik Tanker',
       div2: '02. Advertising DOOH Videotron Media Outdoor',
       div3: '03. AI SaaS Developer & Cloud Systems',
       rights: '© 2026 PT Berkah Jasa Abadi. Seluruh hak cipta dilindungi.'
@@ -160,10 +160,10 @@ const translations = {
       offshoreTag: 'INTEGRATED ENERGY & INDUSTRIAL LOGISTICS',
       holdingBadge: 'MULTI-SECTOR CORPORATE HOLDING',
       companyName: 'PT. BERKAH JASA ABADI',
-      headline: 'Synergy of B30 Energy, Advertising, & AI SaaS',
+      headline: 'Synergy of B50 Energy, Advertising, & AI SaaS',
       aboutUsTag: '[ABOUT US]',
-      introStatement: 'PT Berkah Jasa Abadi merges B30 industrial fuel supply chain, outdoor visual ad media, and AI-powered SaaS software.',
-      desc: 'BJA Holding combines reliable B30 industrial fuel supply, outdoor videotron visual ad exposure, and enterprise AI SaaS intelligence for operational efficiency.',
+      introStatement: 'PT Berkah Jasa Abadi merges B50 industrial fuel supply chain, outdoor visual ad media, and AI-powered SaaS software.',
+      desc: 'BJA Holding combines reliable B50 industrial fuel supply, outdoor videotron visual ad exposure, and enterprise AI SaaS intelligence for operational efficiency.',
       exploreServices: 'Explore Divisions'
     },
     stats: {
@@ -181,8 +181,8 @@ const translations = {
       headline: 'Next-Gen Multi-Sector Tech',
       div1Tag: 'DIVISION 01',
       div1Title: 'Oil & Gas Energy',
-      div1Desc: 'Large-scale B30 biofuel supply, logistics tanker fleets, & heavy equipment maintenance.',
-      div1Link: 'B30 Fuel Supply',
+      div1Desc: 'Large-scale B50 biofuel supply, logistics tanker fleets, & heavy equipment maintenance.',
+      div1Link: 'B50 Fuel Supply',
       
       div2Tag: 'DIVISION 02',
       div2Title: 'Advertising & Media',
@@ -199,13 +199,13 @@ const translations = {
 
       blueprintTag: 'INTEGRATED SCHEMATIC BLUEPRINT',
       blueprintTitle: 'Systems Schematic Architecture',
-      blueprintDesc: 'Select tabs to view technical schematics for B30 fuel delivery, AI monitoring dashboard, or billboard advertising.'
+      blueprintDesc: 'Select tabs to view technical schematics for B50 fuel delivery, AI monitoring dashboard, or billboard advertising.'
     },
     projects: {
       tag: '[KEY PROJECTS]',
       headline: 'Built to Perform',
       desc: 'Proven solutions by PT Berkah Jasa Abadi across 3 leading business sectors with uncompromised safety and AI efficiency.',
-      item1Title: 'Industrial B30 Fuel Distribution',
+      item1Title: 'Industrial B50 Fuel Distribution',
       item1Desc: 'Sustainable industrial fuel supply using high-safety fleet tankers across Indonesia.',
       item1Stat1: 'Tanker Fleets',
       item1Stat2: 'Supply Regions',
@@ -219,7 +219,7 @@ const translations = {
     map: {
       tag: '[NATIONAL PRESENCE]',
       headline: 'Indonesia Logistics Map',
-      desc: 'Connecting industrial nodes nationwide through B30 energy infrastructure, visual media, and AI SaaS.',
+      desc: 'Connecting industrial nodes nationwide through B50 energy infrastructure, visual media, and AI SaaS.',
       monitoring: 'CONNECTED OPERATIONAL CONTROL SYSTEM',
       hqHubs: 'Headquarters & Fuel Terminals',
       nodes: 'Distribution & Media Nodes'
@@ -227,7 +227,7 @@ const translations = {
     esg: {
       tag: '[ESG & SUSTAINABILITY]',
       headline: 'Green Sustainable Industry',
-      desc: 'We integrate B30 clean energy, solar and wind adoption, and AI telemetry analytics.',
+      desc: 'We integrate B50 clean energy, solar and wind adoption, and AI telemetry analytics.',
       stat1Val: '40%',
       stat1Label: 'Fleet Efficiency',
       stat2Val: '100%',
@@ -250,7 +250,7 @@ const translations = {
     reviews: {
       tag: '[PARTNER REVIEWS]',
       headline: 'Operator Reviews',
-      r1Quote: 'Industrial B30 fuel supply solution from BJA Holding is highly reliable, punctual, and fulfills all ISO certifications.',
+      r1Quote: 'Industrial B50 fuel supply solution from BJA Holding is highly reliable, punctual, and fulfills all ISO certifications.',
       r1Role: 'Director of Energy Ops',
       r2Quote: 'Outdoor LED videotron network owned by BJA advertising division delivers significant brand exposure reach.',
       r2Role: 'Head of Marketing',
@@ -262,13 +262,13 @@ const translations = {
     footer: {
       tag: '[GET IN TOUCH]',
       headline: 'Energy, Media & SaaS Innovation',
-      desc: 'Partner with PT Berkah Jasa Abadi for B30 fuel supply chain, outdoor visual ad media, and centralized AI SaaS software.',
+      desc: 'Partner with PT Berkah Jasa Abadi for B50 fuel supply chain, outdoor visual ad media, and centralized AI SaaS software.',
       connectWa: 'Connect via WhatsApp',
       emailTag: 'Corporate Email',
       hqTag: 'Headquarters',
       hqVal: 'Cilegon, Banten - Indonesia',
       divTag: 'Core Holding Divisions',
-      div1: '01. B30 Industrial Fuel Supply & Tanker Logistics',
+      div1: '01. B50 Industrial Fuel Supply & Tanker Logistics',
       div2: '02. DOOH Outdoor Videotron Advertising Media',
       div3: '03. AI SaaS Developer & Cloud Systems',
       rights: '© 2026 PT Berkah Jasa Abadi. All rights reserved.'

@@ -97,14 +97,14 @@
               Arsitektur Sinergi Holding BJA
             </h3>
             <p class="text-slate-500 text-xs mb-6 font-medium">
-              Alur berkesinambungan antara pasokan BBM B30, pemantauan telemetri AI SaaS, dan penyiaran iklan DOOH Videotron.
+              Alur berkesinambungan antara pasokan BBM B50, pemantauan telemetri AI SaaS, dan penyiaran iklan DOOH Videotron.
             </p>
           </div>
 
           <!-- Continuous Interconnected Cards Container -->
           <div class="my-auto space-y-3 relative">
             
-            <!-- STAGE 1: Logistik Pengiriman BBM B30 -->
+            <!-- STAGE 1: Logistik Pengiriman BBM B50 -->
             <div class="p-4 sm:p-5 rounded-2xl bg-slate-50 border-2 border-slate-950 shadow-md relative z-10 flex items-start gap-3 sm:gap-4">
               <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-slate-950 p-2 flex items-center justify-center shrink-0 border border-slate-800">
                 <img src="/bja_logo.png" alt="BJA Logo" class="w-full h-full object-contain" />
@@ -112,12 +112,12 @@
               <div class="min-w-0 flex-1">
                 <div class="flex items-center justify-between gap-2 mb-1">
                   <h4 class="text-xs sm:text-sm font-black font-outfit uppercase text-slate-950 tracking-tight">
-                    LOGISTIK & PENGIRIMAN BBM B30
+                    LOGISTIK & PENGIRIMAN BBM B50
                   </h4>
                   <span class="px-2 py-0.5 rounded bg-slate-950 text-white text-[8px] font-black uppercase tracking-widest hidden sm:inline">DIVISI 01</span>
                 </div>
                 <p class="text-[11px] sm:text-xs text-slate-600 font-medium leading-tight mb-2">
-                  Kilang Suplai B30 ➔ Armada Tangki Tanker ➔ Klien Industri
+                  Kilang Suplai B50 ➔ Armada Tangki Tanker ➔ Klien Industri
                 </p>
                 <div class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded bg-[#CCFF00]/40 border border-[#b8e600] text-[9px] font-black text-slate-950 uppercase">
                   <span>STATUS: REFUELING ACTIVE • ISO-9001</span>

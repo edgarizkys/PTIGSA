@@ -14,11 +14,11 @@ export const globalConfig = reactive({
   pillars: {
     energy: {
       title: 'Oil & Gas Energy',
-      subtitle: 'Industri Bahan Bakar & Logistik Energi B30',
-      desc: 'Penyediaan bahan bakar industri B30, manajemen kilang minyak, dan pemeliharaan armada tangki skala besar dengan keandalan tanpa kompromi.',
+      subtitle: 'Industri Bahan Bakar & Logistik Energi B50',
+      desc: 'Penyediaan bahan bakar industri B50, manajemen kilang minyak, dan pemeliharaan armada tangki skala besar dengan keandalan tanpa kompromi.',
       accent: '#CCFF00',
       image: '/hero_petrova_rig.jpg',
-      tags: ['BBM Industri B30', 'Tanker Fleet', 'Energy Logistics']
+      tags: ['BBM Industri B50', 'Tanker Fleet', 'Energy Logistics']
     },
     advertising: {
       title: 'Advertising & Media Hub',

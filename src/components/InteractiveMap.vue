@@ -110,7 +110,7 @@ const points = [
   { name: 'Batam (Kep. Riau)', shortName: 'BATAM', x: 31, y: 45, type: 'node', status: 'Shipping Node' },
   { name: 'Jakarta / Cilegon (HQ)', shortName: 'JAKARTA (HQ)', x: 33.5, y: 68, type: 'hq', status: 'Main Fuel Hub' },
   { name: 'Surabaya (Jawa)', shortName: 'SURABAYA', x: 45.5, y: 72, type: 'node', status: 'DOOH Media' },
-  { name: 'Balikpapan (Kalimantan)', shortName: 'BALIKPAPAN', x: 49.5, y: 49, type: 'hq', status: 'B30 Terminal' },
+  { name: 'Balikpapan (Kalimantan)', shortName: 'BALIKPAPAN', x: 49.5, y: 49, type: 'hq', status: 'B50 Terminal' },
   { name: 'Makassar (Sulawesi)', shortName: 'MAKASSAR', x: 60.5, y: 66, type: 'node', status: 'Logistics Center' },
   { name: 'Jayapura (Papua)', shortName: 'JAYAPURA', x: 92.5, y: 50, type: 'node', status: 'SaaS Command' },
 ];
