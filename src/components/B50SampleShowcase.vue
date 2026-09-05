@@ -131,8 +131,8 @@
 
       </div>
 
-      <!-- Action Card directly below gallery (No COA Table) -->
-      <div class="petrova-card-white border-2 border-slate-300 p-6 sm:p-8 bg-white shadow-xl rounded-3xl flex flex-col sm:flex-row items-center justify-between gap-4">
+      <!-- Action Card directly below gallery -->
+      <div class="petrova-card-white border-2 border-slate-300 p-6 sm:p-8 bg-white shadow-xl rounded-3xl flex flex-col sm:flex-row items-center justify-between gap-4 mb-14">
         <div>
           <span class="text-[9px] font-black text-slate-500 uppercase tracking-widest block mb-1">PERMINTAAN SAMPEL B50 INDUSTRI</span>
           <h3 class="text-lg sm:text-xl font-black font-outfit text-slate-950 uppercase">
@@ -152,10 +152,213 @@
         </a>
       </div>
 
+      <!-- SECTION TABEL HARGA B50: JABODETABEK & PELABUHAN STS -->
+      <div id="b50-pricing" class="pt-8 border-t-2 border-slate-300">
+        
+        <!-- Section Title Header -->
+        <div class="flex flex-col md:flex-row justify-between items-start md:items-end gap-4 mb-8">
+          <div>
+            <div class="mb-2">
+              <span class="petrova-tag-dark text-[9px] sm:text-[10px]">HARGA BBM B50 INDUSTRI</span>
+            </div>
+            <h3 class="text-2xl sm:text-4xl font-black font-outfit uppercase text-slate-950 tracking-tight">
+              HARGA B50 JABODETABEK & PELABUHAN STS
+            </h3>
+            <p class="text-xs sm:text-sm text-slate-600 font-medium mt-1 max-w-2xl">
+              Daftar estimasi indikatif pasokan B50 Franko Depo Darat (Jabodetabek & Banten) dan Ship-To-Ship (STS Laut) perairan pelabuhan.
+            </p>
+          </div>
+
+          <div class="flex items-center gap-2 bg-slate-950 text-white px-3.5 py-2 rounded-2xl border border-slate-800 shrink-0">
+            <span class="w-2.5 h-2.5 rounded-full bg-[#00E5FF] animate-pulse"></span>
+            <span class="text-[10px] font-mono font-bold uppercase tracking-wider">FORMULA AKTIF 2026</span>
+          </div>
+        </div>
+
+        <!-- 2 TABEL DENGAN DESAIN MODERN CLEAN: 1. FRANKO JABODETABEK, 2. STS LAUT PELABUHAN -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          
+          <!-- TABEL 1: FRANKO DEPO DARAT (JABODETABEK & BANTEN) -->
+          <div class="petrova-card-white border-2 border-slate-950 p-6 bg-white shadow-xl rounded-3xl flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between border-b border-slate-200 pb-4 mb-4">
+                <div class="flex items-center gap-2.5">
+                  <div class="w-9 h-9 rounded-xl bg-slate-950 text-[#00E5FF] flex items-center justify-center font-bold text-sm">
+                    🚛
+                  </div>
+                  <div>
+                    <span class="text-[9px] font-mono font-bold text-slate-500 uppercase tracking-widest block">SKEMA DARAT</span>
+                    <h4 class="text-base font-black font-outfit text-slate-950 uppercase">FRANKO JABODETABEK & BANTEN</h4>
+                  </div>
+                </div>
+                <span class="text-[9px] font-mono font-bold text-emerald-700 bg-emerald-50 px-2 py-1 rounded border border-emerald-200">
+                  TANGKI DARAT (INC. PPN)
+                </span>
+              </div>
+
+              <!-- Compact Table List -->
+              <div class="space-y-2.5 mb-6">
+                <div 
+                  v-for="item in jabodetabekPrices" 
+                  :key="item.area"
+                  class="p-3.5 rounded-2xl bg-slate-50 border border-slate-200 hover:border-slate-400 transition-colors flex items-center justify-between gap-3"
+                >
+                  <div>
+                    <h5 class="text-xs font-black font-outfit text-slate-950 uppercase">{{ item.area }}</h5>
+                    <p class="text-[10px] font-medium text-slate-500 leading-tight mt-0.5">{{ item.coverage }}</p>
+                  </div>
+
+                  <div class="text-right shrink-0">
+                    <span class="text-sm font-black font-outfit text-slate-950 block leading-none">{{ item.price }}</span>
+                    <span class="text-[9px] font-mono text-slate-500 block mt-0.5">MOQ: {{ item.moq }}</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Footer Action Franko -->
+            <a 
+              href="https://wa.me/6282114242634?text=Halo%20PT%20Berkah%20Jasa%20Abadi,%20saya%20ingin%20meminta%20penawaran%20harga%20B50%20Franko%20Depo%20Darat%20Wilayah%20Jabodetabek" 
+              target="_blank"
+              class="w-full py-3 px-4 rounded-xl bg-slate-950 hover:bg-slate-800 text-white text-xs font-black uppercase font-outfit tracking-wider text-center transition-all shadow-md block"
+            >
+              Minta Penawaran Franko Jabodetabek →
+            </a>
+          </div>
+
+          <!-- TABEL 2: SHIP-TO-SHIP (STS LAUT PELABUHAN UTAMA) -->
+          <div class="petrova-card-white border-2 border-slate-950 p-6 bg-white shadow-xl rounded-3xl flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between border-b border-slate-200 pb-4 mb-4">
+                <div class="flex items-center gap-2.5">
+                  <div class="w-9 h-9 rounded-xl bg-slate-950 text-[#00E5FF] flex items-center justify-center font-bold text-sm">
+                    ⚓
+                  </div>
+                  <div>
+                    <span class="text-[9px] font-mono font-bold text-[#F97316] uppercase tracking-widest block">SKEMA LAUT / OFFSHORE</span>
+                    <h4 class="text-base font-black font-outfit text-slate-950 uppercase">STS PELABUHAN & ANCHORAGE</h4>
+                  </div>
+                </div>
+                <span class="text-[9px] font-mono font-bold text-[#00E5FF] bg-slate-950 px-2 py-1 rounded border border-slate-800">
+                  BUNKER TANKER STS (INC. PPN)
+                </span>
+              </div>
+
+              <!-- Compact Table List -->
+              <div class="space-y-2.5 mb-6">
+                <div 
+                  v-for="item in portStsPrices" 
+                  :key="item.port"
+                  class="p-3.5 rounded-2xl bg-amber-50/70 border border-amber-200 hover:border-amber-400 transition-colors flex items-center justify-between gap-3"
+                >
+                  <div>
+                    <h5 class="text-xs font-black font-outfit text-slate-950 uppercase">{{ item.port }}</h5>
+                    <p class="text-[10px] font-medium text-slate-600 leading-tight mt-0.5">{{ item.anchorage }}</p>
+                  </div>
+
+                  <div class="text-right shrink-0">
+                    <span class="text-sm font-black font-outfit text-[#F97316] block leading-none">{{ item.price }}</span>
+                    <span class="text-[9px] font-mono text-slate-500 block mt-0.5">MOQ: {{ item.moq }}</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Footer Action STS -->
+            <a 
+              href="https://wa.me/6282114242634?text=Halo%20PT%20Berkah%20Jasa%20Abadi,%20saya%20ingin%20meminta%20penawaran%20harga%20B50%20Ship-To-Ship%20(STS)%20Perairan%20Pelabuhan" 
+              target="_blank"
+              class="w-full py-3 px-4 rounded-xl bg-slate-950 hover:bg-slate-800 text-white text-xs font-black uppercase font-outfit tracking-wider text-center transition-all shadow-md block"
+            >
+              Minta Penawaran STS Pelabuhan →
+            </a>
+          </div>
+
+        </div>
+
+        <!-- Note & WhatsApp Hotline Footer -->
+        <div class="mt-6 p-4 rounded-2xl bg-slate-950 text-white border border-slate-800 text-[11px] font-mono flex flex-col sm:flex-row items-center justify-between gap-3">
+          <p class="text-slate-300">
+            *Harga indikatif berbasis perhitungan periode berjalan. Penawaran pasti resmi disesuaikan dengan volume & koordinat titik serah.
+          </p>
+          <a 
+            href="https://wa.me/6282114242634?text=Halo%20PT%20Berkah%20Jasa%20Abadi,%20saya%20ingin%20berkonsultasi%20mengenai%20kebutuhan%20BBM%20B50" 
+            target="_blank" 
+            class="text-[#00E5FF] font-bold uppercase whitespace-nowrap hover:underline"
+          >
+            Konsultasi Sales BJA →
+          </a>
+        </div>
+
+      </div>
+
     </div>
   </section>
 </template>
 
 <script setup>
+import { ref } from 'vue';
 import { t } from '../i18n';
+
+// Pricing Data Franko Depo Darat (Jabodetabek & Banten)
+const jabodetabekPrices = ref([
+  {
+    area: 'DKI JAKARTA',
+    coverage: 'Tanjung Priok, Marunda, Kamal, Cakung',
+    price: 'Rp 17.200 / L',
+    moq: '8.000 Liter'
+  },
+  {
+    area: 'BEKASI & CIKARANG',
+    coverage: 'Kawasan Industri MM2100, Jababeka, EJIP, Deltamas',
+    price: 'Rp 17.200 / L',
+    moq: '8.000 Liter'
+  },
+  {
+    area: 'TANGERANG & TANGSEL',
+    coverage: 'Cikupa, Balaraja, Pasar Kemis, BSD Industri',
+    price: 'Rp 17.200 / L',
+    moq: '8.000 Liter'
+  },
+  {
+    area: 'BOGOR & DEPOK',
+    coverage: 'Sentul Industri, Gunung Putri, Cileungsi, Cimanggis',
+    price: 'Rp 17.200 / L',
+    moq: '8.000 Liter'
+  },
+  {
+    area: 'CILEGON & SERANG (BANTEN)',
+    coverage: 'Kawasan Industri Bojonegara, Merak, Ciwandan',
+    price: 'Rp 17.200 / L',
+    moq: '8.000 Liter'
+  }
+]);
+
+// Pricing Data Ship-To-Ship (STS) Laut Pelabuhan Utama
+const portStsPrices = ref([
+  {
+    port: 'PELABUHAN TANJUNG PRIOK',
+    anchorage: 'Perairan Anchorage Priok & Kalibaru',
+    price: 'Rp 18.700 / L',
+    moq: '500 KL'
+  },
+  {
+    port: 'PELABUHAN MERAK & BOJONEGARA',
+    anchorage: 'Perairan Selat Sunda & Banten Anchorage',
+    price: 'Rp 18.700 / L',
+    moq: '500 KL'
+  },
+  {
+    port: 'PELABUHAN SUNDA KELAPA & MUARA BARU',
+    anchorage: 'Perairan Teluk Jakarta & Offshore Anchorage',
+    price: 'Rp 18.700 / L',
+    moq: '300 KL'
+  },
+  {
+    port: 'PELABUHAN MARUNDA',
+    anchorage: 'Perairan Marunda & KBN Coastal Waters',
+    price: 'Rp 18.700 / L',
+    moq: '300 KL'
+  }
+]);
 </script>

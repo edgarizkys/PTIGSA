@@ -1,7 +1,7 @@
 <template>
   <div class="selection:bg-amber-gold/30">
     <CustomCursor />
-    <Navigation />
+    <Navigation @open-portal="isAdminPortalOpen = true" />
     
     <main>
       <Hero />
@@ -14,12 +14,15 @@
       <ContactHub />
     </main>
 
+    <!-- Portal Modal (Admin Dashboard for SPH/SO/DO) -->
+    <AdminDocDashboard :isOpen="isAdminPortalOpen" @close="isAdminPortalOpen = false" />
+
     <ContactFloating />
   </div>
 </template>
 
 <script setup>
-import { onMounted } from 'vue';
+import { ref, onMounted } from 'vue';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
@@ -31,9 +34,12 @@ import BentoGrid from './components/BentoGrid.vue';
 import B50SampleShowcase from './components/B50SampleShowcase.vue';
 import IntegratedFlow from './components/IntegratedFlow.vue';
 import InteractiveMap from './components/InteractiveMap.vue';
+import AdminDocDashboard from './components/AdminDocDashboard.vue';
 import ContactHub from './components/ContactHub.vue';
 import OrgChart from './components/OrgChart.vue';
 import ContactFloating from './components/ContactFloating.vue';
+
+const isAdminPortalOpen = ref(false);
 
 gsap.registerPlugin(ScrollTrigger);
 

@@ -31,7 +31,7 @@
           </a>
         </div>
 
-        <!-- Right Action Controls: Language Switcher & CTA -->
+        <!-- Right Action Controls: Language Switcher, Login & CTA -->
         <div class="flex items-center gap-2 sm:gap-3">
           <!-- Language Toggle Switcher (ID | EN) -->
           <div class="flex items-center rounded-lg bg-slate-900 border border-slate-800 p-0.5 sm:p-1 font-outfit">
@@ -50,6 +50,15 @@
               EN
             </button>
           </div>
+
+          <!-- Top Bar LOGIN Button -->
+          <button 
+            @click="emit('open-portal')" 
+            class="px-3.5 py-1.5 sm:px-4 sm:py-2 rounded-xl bg-gradient-to-r from-[#00E5FF] to-cyan-500 hover:from-cyan-400 hover:to-[#00E5FF] text-slate-950 font-black text-[10px] sm:text-xs uppercase tracking-wider font-outfit transition-all shadow-lg hover:shadow-cyan-500/20 flex items-center gap-1.5 cursor-pointer group"
+          >
+            <span>LOGIN</span>
+            <LogIn :size="14" class="transition-transform group-hover:translate-x-0.5" />
+          </button>
 
           <a 
             href="#contact" 
@@ -75,6 +84,15 @@
           <div class="w-14 h-14 rounded-2xl bg-[#CCFF00] flex items-center justify-center p-2 mb-2 shadow-xl">
             <img src="/bja_logo.png" alt="BJA Logo" class="w-full h-full object-contain" />
           </div>
+
+          <button 
+            @click="emit('open-portal'); isMobileMenuOpen = false" 
+            class="w-full max-w-xs py-3 px-6 rounded-2xl bg-[#00E5FF] text-slate-950 font-black text-sm uppercase tracking-wider font-outfit shadow-xl flex items-center justify-center gap-2 mb-2"
+          >
+            <span>LOGIN</span>
+            <LogIn :size="16" />
+          </button>
+
           <a 
             v-for="link in navLinks" 
             :key="link.name" 
@@ -99,9 +117,10 @@
 
 <script setup>
 import { ref, computed, onMounted, onUnmounted } from 'vue';
-import { ArrowUpRight, Menu, X } from 'lucide-vue-next';
+import { ArrowUpRight, Menu, X, LogIn } from 'lucide-vue-next';
 import { currentLang, setLang, t } from '../i18n';
 
+const emit = defineEmits(['open-portal']);
 const scrolled = ref(false);
 const isMobileMenuOpen = ref(false);
 
@@ -110,7 +129,7 @@ const navLinks = computed(() => [
   { name: t('nav.projects'), href: '#projects' },
   { name: t('nav.ecosystem'), href: '#integrated-flow' },
   { name: t('nav.organization'), href: '#organization' },
-  { name: t('nav.reviews'), href: '#reviews' },
+  { name: 'PORTAL SO/DO', href: '#admin-portal' },
   { name: t('nav.contact'), href: '#contact' },
 ]);
 

@@ -3,13 +3,13 @@
     <!-- Inner Acid Lime Cursor Dot -->
     <div 
       ref="dot" 
-      class="fixed top-0 left-0 w-3 h-3 rounded-full bg-[#CCFF00] border border-slate-950 pointer-events-none z-[9999] shadow-[0_0_10px_#CCFF00]"
+      class="fixed top-0 left-0 w-3 h-3 rounded-full bg-[#CCFF00] border border-slate-950 pointer-events-none z-[999999] shadow-[0_0_10px_#CCFF00]"
     ></div>
 
     <!-- Outer Follower Ring -->
     <div 
       ref="follower" 
-      class="fixed top-0 left-0 w-9 h-9 rounded-full border-2 border-[#CCFF00] pointer-events-none z-[9998] transition-transform duration-100 ease-out bg-[#CCFF00]/10"
+      class="fixed top-0 left-0 w-9 h-9 rounded-full border-2 border-[#CCFF00] pointer-events-none z-[999998] transition-transform duration-100 ease-out bg-[#CCFF00]/10"
     ></div>
   </div>
 </template>
